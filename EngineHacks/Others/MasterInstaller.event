@@ -1,0 +1,37 @@
+// This installs extra ASM
+
+#include "SupportPostBattle/Installer.event"
+// by Vesly
+
+#include "ExtendWeaponDescBox/Installer.event"
+// by Vesly
+
+//#include "ChapterScreenPokémblem/ChapterScreen.event"
+// by Huichelaar and Vesly
+
+#include "SupplyView/SupplyView.event"
+// by AuraWolf
+
+#include "SetNameFixes/SetNameFixes.event"
+// by AuraWolf
+
+#include "Panacea/Panacea.event"
+// by MintX
+
+#include "InlineHacks/Installer.event"
+// by Contro
+
+#include "ResTerrainWindow/Installer.event"
+// by Contro
+
+#include "FE8_Stealable_Droppable/Display Droppable Item.event"
+// by Scraiza
+
+#include "MinimugBoxStatusGraphic/Installer.event"
+// by Sme and SomeonePassingBy
+
+#include "NewFreezeIcon/Installer.event"
+// by SomeonePassingBy
+
+#include "FE8-Convoy_Partition_and_Item_Combining/FE8-Convoy_Stuff_EA.event"
+// by Tequila

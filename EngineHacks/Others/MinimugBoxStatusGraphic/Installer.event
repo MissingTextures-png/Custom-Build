@@ -1,0 +1,24 @@
+
+// Made using the code (and graphics) from Sme's Status Expansion patch.
+
+#ifndef MinimugBoxStatusGraphic
+    #define MinimugBoxStatusGraphic
+
+    #ifdef _FE8_
+
+        PUSH
+            ORG $8C39C
+            jumpToHack(NewMinimugBoxGraphicIndexer)
+        POP
+
+        #include "MinimugBoxStatusGraphic.lyn.event"
+
+        ALIGN 4
+        NewMinimugBoxLabelNames:
+        #incext Png2Dmp "MinimugBoxStatusGraphic.png"
+
+    #else // _FE8_
+        ERROR This hack is for FE8.
+    #endif // _FE8_
+
+#endif // MinimugBoxStatusGraphic

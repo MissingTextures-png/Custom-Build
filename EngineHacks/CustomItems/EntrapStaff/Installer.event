@@ -1,0 +1,7 @@
+
+ALIGN 4
+EntrapStaff_Effect:
+rfStaffEffect(Staff_UETemplate, Staff_Entrap)
+
+Staff_Entrap:
+#incbin "EntrapEffect.dmp"

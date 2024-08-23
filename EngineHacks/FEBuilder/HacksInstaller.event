@@ -1,0 +1,6 @@
+//
+// This isntalls FEBuilder patches that are copied to this folder
+
+#include ForceBattleOffWithDanceAndStaff/Install.txt
+
+#include Staff_Heal_Exp/FE8_Staff_Heal_Exp_EA.event

@@ -236,6 +236,13 @@ POP
   #include "Necessary/Popups.event"
   
   #include "Necessary/CalcLoops/CalcLoops.event"
+  
+     //Extra FEBuilder patches
+ #include "FEBuilder/HacksInstaller.event"
+ 
+// #include "Others/MasterInstaller.event"
+
+#include "CustomItems/_CustomItemSetup.event"
 
   #ifdef STAIRS_ASM
     #ifndef USE_SAVE_EXPANSION

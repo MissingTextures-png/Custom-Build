@@ -1,0 +1,7 @@
+// Turns Antitoxins into Panaceas that can cure all status conditions.
+// Code by MintX
+
+PUSH
+ORG 0x290EE
+SHORT 0x2800 0xD001
+POP

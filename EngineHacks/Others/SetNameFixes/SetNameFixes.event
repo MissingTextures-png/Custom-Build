@@ -1,0 +1,68 @@
+
+/*
+Set Name Fixes
+[SetName] is a command for cgs generally used to indicate a speaker, but it has a few limitations. The length of the name must be an even number, and [SetName] only takes effect at the very beginning of the text. You can already work around these two issues by using [.] and multiple text ids, respectively, but this assembly's modifications edits the textcode itself to solve those problems.
+
+Optional Modifications
+SET_NAME_ODD: This fixes problems with attempting to set a name that has an odd-numbered character length.
+
+SET_NAME_MULTIPLE: This makes [SetName] replace the most recent name set by [SetName]. There is a pause variable that you can modify below. If you want a different pause for different situations, you will have to do that on your own (I would set the variable below to 0 and then either use whatever textcodes deal with pausing or use [LoadOverworldFaces] and then add whatever STAL feels right)
+
+Note: When using [SetName] multiple times, use textcode [0x2] or [2NL] before all but the first one. This will make the next speaker's dialogue begin from where you'd expect it to, rather than picking up from the previous speaker. I recommend making a new definition in ParseDefinitions.txt for this purpose, such as the one below.
+
+[SetNewName] = [0x2][0x80][0x23]
+*/
+
+#include EAstdlib.event
+#include "Extensions/Hack Installation.txt"
+
+#define SET_NAME_ODD
+#define SET_NAME_MULTIPLE
+
+#ifdef SET_NAME_MULTIPLE
+	SetNamePauseLink:
+	BYTE 16 //larger value = longer pause; the default value of 16 (0x10 hex) is equal to using the pause from textcode 0x5
+	ALIGN 4
+#endif
+
+
+
+//-------------------------------------------
+//WIZARD CHECKPOINT
+//Do not touch anything below unless you know what you're doing
+//-------------------------------------------
+
+
+
+#ifdef SET_NAME_ODD
+	
+	PUSH
+
+	ORG 0x8EB36
+	SHORT 0 0 //lsl r0, #0; lsl r0 #0
+	SHORT 0x1C48 0x62D8 //add r0, r1, #1; str r0, [r3,#0x2C]
+	SHORT 0x3201 0x7848 //add r2, #1; ldrb r0, [r1,#1]
+	PROTECT 0x8EB36 CURRENTOFFSET-1
+	
+	POP
+	
+#endif
+
+
+#ifdef SET_NAME_MULTIPLE
+
+	PUSH
+	
+	ORG 0x8FDCA
+	SHORT 0x1C30 0x4901 //mov r0, r6; ldr r1, =ReadTextCode80h
+	SHORT 0x468E 0xF800 //mov lr, r1; bl lr+0
+	SHORT 0xE044 //b 0x8FE5E
+	POIN ReadTextCode80
+	PROTECT 0x8FDCA CURRENTOFFSET-1
+	
+	POP
+	
+	#include "asm/ReadTextCode80.lyn.event"
+	ALIGN 4
+	
+#endif

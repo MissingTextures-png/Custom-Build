@@ -19,6 +19,7 @@
 
     //Engine Hacks
     #include "EngineHacks/_MasterHackInstaller.event"
+	#include "EngineHacks/Equip/ASMMasterInstaller.event"
     MESSAGE Used hax space ends at currentOffset
 
 	#ifdef USE_TEST_MAP
@@ -29,6 +30,8 @@
     //Maps
     #include "Maps/MasterMapInstaller.event"
     #endif // USE_TEST_MAP
+	
+	#include "EngineHacks/Others/MasterInstaller.event"
 	
     MESSAGE Used free space ends at currentOffset
 #else

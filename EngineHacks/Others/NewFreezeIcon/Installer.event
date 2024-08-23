@@ -1,0 +1,15 @@
+#ifdef FREEZE_HACK
+    #ifdef _FE8_
+
+    PUSH
+    ORG 0x276F8
+    POIN NewFreezeIcon
+    POP
+
+    #include "NewFreezeIcon.lyn.event"
+
+    #else // _FE8_
+        ERROR This hack is for FE8.
+    #endif // _FE8_
+
+#endif // FREEZE_HACK
