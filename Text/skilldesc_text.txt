@@ -1269,3 +1269,218 @@ least 3 higher than the enemy's.[X]
 Water Boost: Grants +6 Resistance[N]
 if unit's current HP is at[N]
 least 3 higher than the enemy's.[X]
+
+//
+
+## SD_Lightbreaker
+Lightbreaker: +50 Hit/Avo when[N]
+enemy has a Light tome equipped.[X]
+
+## SD_Darkbreaker
+Darkbreaker: +50 Hit/Avo when[N]
+enemy has a Dark tome equipped.[X]
+
+## SD_Lightfaire
+Lightfaire: +4 damage[N]
+when equipping a Light tome.[X]
+
+## SD_Darkfaire
+Darkfaire: +4 damage[N]
+when equipping a Dark tome.[X]
+
+## SD_StrongLift
+Strong Lift: Unit has +5 Aid[N]
+without changing their Con.[X]
+
+## SD_AirSuperiority
+Air Superiority: Grants the user[N]
++30 Hit/Avd against Flying units.[X]
+
+## SD_Concentration
+Concentration: If unit is not adjacent[N]
+to a foe, grants +2 damage dealt.[X]
+
+## SD_Defender
+Defender: While unit is rescuing[N]
+ally, grants +2 to all combat stats.[X]
+
+## SD_Deliverer
+Deliverer: While unit is rescuing[N]
+ally, grants +2 Movement.[X]
+
+## SD_DivineProtection
+Divine Protection: Grants -2 damage[N]
+recieved to allies within 2 spaces.[X]
+
+## SD_GambleFE14
+Tempest: Grants Crit +10.[N]
+Inflicts Hit -10.[X]
+
+## SD_Guard
+Guard: At start of combat, if unit’s[N]
+HP > 50%, grants +10 Critical Evade.[X]
+
+## SD_Heartseeker
+Heartseeker: While in combat against an[N]
+adjacent foe, inflicts -20 Avo on foe.[X]
+
+## SD_Transmute
+Transmute: If foe initiates battle[N]
+and deals magical damage, grants[N]
+unit +3 to all stats for 1 turn.[X]
+
+## SD_Volant
+Volant: If no allies within 2 spaces[N]
+of unit, grants +2 damage dealt.[X]
+
+## SD_SalvageBlow
+Salvage Blow: After attacking and[N]
+defeating an enemy, Luck% chance[N]
+to find an Iron weapon.[X]
+
+## SD_WitchsBrew
+Witch's Brew: Luck% of getting a healing[N]
+item after Wait for the first 7 turns.[X]
+
+## SD_Bushido
+Bushido: If unit’s level is higher[N]
+than the enemy, grants +10 Crit[N]
+and +2/-2 Damage dealt/taken.[X]
+
+## SD_Competitive
+Competitive: If unit’s level is lower[N]
+than the enemy, grants +10 Crit[N]
+and +2/-2 Damage dealt/taken.[X]
+
+## SD_Evenhanded
+Evenhanded: During even-[N]
+numbered Turns, damage +4[X]
+
+## SD_FierceCounter
+Fierce Counter: +2 Damage when[N]
+a male enemy initiates the combat.[X]
+
+## SD_HuntersBoon
+Hunter’s Boon: If enemy’s[N]
+HP < 50%, grants +20 Crit.[X]
+
+## SD_OddShaped
+Odd Shaped: During odd-[N]
+numbered Turns, damage +4[X]
+
+## SD_Philanderer
+Philanderer: +2/-2 damage dealt/taken[N]
+when adjacent to a female ally.[X]
+
+## SD_Pride
+Pride: If unit’s level is lower[N]
+than the enemy, +4 Damage.[X]
+
+## SD_Prodigy
+Prodigy: If unit’s Power is lower[N]
+than enemy’s Power, +4 Damage.[X]
+
+## SD_Rivalry
+Rivalry: +2/-2 damage dealt/taken[N]
+when adjacent to a male ally.[X]
+
+## SD_Unmask
+Unmask: If enemy is female,[N]
++4 Damage and +20 Crit.[X]
+
+## SD_Bibliophile
+Bibliophile: When user has 3 or[N]
+more tomes in inventory, Crit +10.[X]
+
+## SD_BoldTurtle
+Bold Turtle: If foe’s Move > unit’s[N]
+Move, +4 Damage dealt.[X]
+
+## SD_Entropy
+Entropy: +25 avo against[N]
+physical weapons.[X]
+
+## SD_GracefulRider
+Graceful Rider: Grants the user[N]
++15 Hit/Avd against enemies that[N]
+have lower Skl than unit.[X]
+
+## SD_Hunter
+Hunter: Attack +5 when[N]
+fighting a mounted unit.[X]
+
+## SD_ShortFuse
+Short Fuse: If unit’s[N]
+HP <100%, Crit +10%.[X]
+
+## SD_Underdog
+Underdog: +15 Hit/Avo[N]
+if User Lv. < Enemy Lv.[X]
+
+## SD_WingedRider
+Winged Rider: Grants the user[N]
++15 Avd against ground units.[X]
+
+## SD_WiseTurtle
+Wise Turtle: If foe’s Move > unit’s[N]
+Move, -4 Damage taken.[X]
+
+## SD_HighGround
+High Ground: If on a fort, +2[N]
+range to all ranged weapon types.[X]
+
+## SD_SolarBrace
+Solar Brace: When initiating[N]
+combat, heal 25% of damage dealt.[X]
+
+## SD_LunarBrace
+Lunar Brace: When initiating[N]
+combat, ignore 25% of enemy def/res.[X]
+
+## SD_Blessing
+Blessing: Guaranteed to not[N]
+consume weapon durability.[X]
+
+## SD_CarefulAim
+CarefulAim: +30 hit if[N] 
+the user initiates combat[N] 
+without moving.[X]
+
+## SD_Stalwart
+Stalwart: This unit is[N]
+immune to status effects.[X]
+
+## SD_WeaponInsight
+WeaponInsight: Add +20 crit[N]
+if the user's weapon has a[N]
+higher rank than the enemy's.[X]
+
+## SD_RallyingCry
+RallyingCry: Allies deal +2[N]
+damage and enemies deal -2[N]
+in a 4 tile radius of the user.[X]
+
+## SD_Circlet
+Circlet: Grants the[N]
+effects of both[N]
+Miracle and Renewal[X]
+
+## SD_Saunion
+Saunion: +5 hit. Put this[N]
+on the Saunion lance.[X]
+
+## SD_RangeAccuracyNegate
+RangeAccuracyNegate: Negates[N]
+hit diminish on ranged weapons.[X]
+
+## SD_ArmsMaster
+Arms Master: Unit can S rank[N]
+more than one weapon type.[X]
+
+## SD_FairFight
+FairFight: Add 20 hit[N]
+to both sides.[X]
+
+## SD_Nonconforming
+Reaver Adept: Invert the effects[N]
+of the weapon triangle.[X]

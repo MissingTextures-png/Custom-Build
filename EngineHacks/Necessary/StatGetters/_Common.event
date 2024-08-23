@@ -10,6 +10,20 @@ prHalveIfCapturing:
 	#incbin "_asm/HalveIfCapturing.bin"
 	POIN Is_Capture_Set
 	
+prDefenderBonus:
+	rIfUnitHasSkill(DefenderID)
+		rIfUnitHasState(US_RESCUING)
+			rAddConst(2)
+
+prDelivererBonus:
+	rIfUnitHasSkill(DelivererID)
+		rIfUnitHasState(US_RESCUING)
+			rAddConst(2)
+			
+prStrongBonus:
+	rIfUnitHasSkill(StrongLiftID)
+		rAddConst(5)
+			
 prMinZero:
 {
 	rIf(Check)

@@ -147,6 +147,26 @@ POIN AuraSkillCheck
 WORD BlueFlameID
 
 ALIGN 4
+Concentration:
+#incbin "Concentration/Concentration.dmp"
+POIN SkillTester
+POIN AuraSkillCheck
+WORD ConcentrationID
+
+ALIGN 4
+DivineProtection:
+#incbin "DivineProtection/DivineProtection.dmp"
+POIN AuraSkillCheck
+WORD DivineProtectionID
+
+ALIGN 4
+Volant:
+#incbin "Volant/Volant.dmp"
+POIN SkillTester
+POIN AuraSkillCheck
+WORD VolantID
+
+ALIGN 4
 KeepUp:
 #incbin "KeepUp/KeepUp.dmp"
 POIN AuraSkillCheck

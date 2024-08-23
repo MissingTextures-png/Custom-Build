@@ -7,5 +7,5 @@ WORD 50 // Hit/Avoid Bonus
 
 ALIGN 4
 BreakerIDList:
-BYTE SwordbreakerID LancebreakerID AxebreakerID BowbreakerID TomebreakerID TomebreakerID TomebreakerID TomebreakerID
+BYTE SwordbreakerID LancebreakerID AxebreakerID BowbreakerID StaffbreakerID TomebreakerID LightbreakerID DarkbreakerID
 

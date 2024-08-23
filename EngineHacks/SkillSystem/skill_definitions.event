@@ -46,7 +46,7 @@
 //Drive Skills: Allies within 2 spaces receive +4 to their respective stat.
 //By Sme
 #define DriveStrID 211
-#define DriveMagID 212
+#define DriveMagID 255
 #define DriveSpdID 213
 #define DriveDefID 214
 #define DriveResID 215
@@ -94,7 +94,7 @@
 //Spur Skills: Adjacent allies gain +4 to their respective stat.
 //Author Unknown (Initial Commit)
 #define SpurStrID 58
-#define SpurMagID 59
+#define SpurMagID 255
 #define SpurSpdID 60
 #define SpurDefID 61
 #define SpurResID 62
@@ -127,7 +127,7 @@
 #define SealDefID 105
 #define SealResID 106
 //By Snakey1
-#define SealMagID 210
+#define SealMagID 255
 
 //Full Metal Body: This unit is immune to all the Seal skills.
 //By Leonarth
@@ -332,6 +332,9 @@
 #define AxebreakerID 21
 #define BowbreakerID 22
 #define TomebreakerID 23
+#define LightbreakerID 75
+#define DarkbreakerID 76
+#define StaffbreakerID 255
 
 //Charge: Gain +1 damage for every two squares moved.
 //By Datagne
@@ -396,6 +399,9 @@
 #define AxefaireID 40
 #define BowfaireID 41
 #define TomefaireID 42
+#define LightfaireID 73
+#define DarkfaireID 74
+#define StaffFaireID 255
 
 //Fiery Blood: +4 damage when HP is not at max.
 //Author Unknown (Initial Commit)
@@ -564,23 +570,23 @@
 
 //Adept: Gain a consecutive attack. (Speed % activation)
 //Author Unknown (Initial Commit)
-#define AdeptID 10
+#define AdeptID 255
 
 //Aegis: Nullify a magic attack. (Skill % activation)
 //Author Unknown (Initial Commit)
-#define AegisID 24
+#define AegisID 255
 
 //Aether: First strike absorbs HP, second strike negates defenses. (Skill/2 % activation)
 //Author Unknown (Initial Commit)
-#define AetherID 16
+#define AetherID 255
 
 //Astra: 5 attacks at half damage. (Skill % activation)
 //Author Unknown (Initial Commit)
-#define AstraID 17
+#define AstraID 255
 
 //Bane: Leave the opponent at 1 HP. (Skill/2 % activation)
 //Author Unknown (Initial Commit)
-#define BaneID 124
+#define BaneID 255
 
 //Barricade: Damage taken is halved after first being struck.
 //By Snakey1
@@ -592,15 +598,15 @@
 
 //Black Magic: Skill% chance to inflict a random status.
 //By Tequila
-#define BlackMagicID 169
+#define BlackMagicID 255
 
 //Colossus: Triples Strength. (Skill % activation)
 //Author Unknown (Initial Commit)
-#define ColossusID 67
+#define ColossusID 255
 
 //Corona: Negate enemy resistance. (Skill% activation)
 //By Sme
-#define CoronaID 246
+#define CoronaID 255
 
 //Counter: Reflect physical damage when attacked at 1-2 range.
 //Author Unknown (Initial Commit)
@@ -612,7 +618,7 @@
 
 //Deadeye: Doubles hit rate. Skill% chance to inflict sleep.
 //By Sme
-#define DeadeyeID 252
+#define DeadeyeID 255
 
 //Devil's Luck: Immune to Devil Reversal. Gives unit's Devil Reversal to the enemy. (31-Luck % chance of Devil Reversal).
 //By Leonarth
@@ -631,15 +637,15 @@
 
 //Dragon Fang: 1.5x damage. (Skill% activation)
 //By Sme
-#define DragonFangID 253
+#define DragonFangID 255
 
 //Enrage: Inflict berserk status. (Skill% activation)
 //By Sme
-#define EnrageID 251
+#define EnrageID 255
 
 //Flare: Halve enemy resistance. (Skill% activation)
 //By Sme
-#define FlareID 247
+#define FlareID 255
 
 //Foresight: Avoid the damage from enemy Critical Hits and Skill Activations.
 //By Leonarth
@@ -647,11 +653,11 @@
 
 //Ignis: Add Def/2 and Res/2 to damage dealt. (Skill % activation)
 //Author Unknown (Initial Commit)
-#define IgnisID 80
+#define IgnisID 255
 
 //Impale: Deal 4x damage. (Skill % activation)
 //Author Unknown (Initial Commit)
-#define ImpaleID 66
+#define ImpaleID 255
 
 //Lethality: Instantly kill opponent. (Skill/2 % activation)
 //Author Unknown (Initial Commit)
@@ -659,7 +665,7 @@
 
 //Luna: Negates enemy defenses. (Skill % activation)
 //Author Unknown (Initial Commit)
-#define LunaID 14
+#define LunaID 255
 
 //Miracle: Survive a lethal attack if HP > 50%.
 //Author Unknown (Initial Commit)
@@ -671,35 +677,35 @@
 
 //Pavise: Nullify a physical attack. (Skill % activation)
 //Author Unknown (Initial Commit)
-#define PaviseID 25
+#define PaviseID 255
 
 //Petrify: Inflict stone status. (Skill% activation)
 //By Sme
-#define PetrifyID 250
+#define PetrifyID 255
 
 //Sol: Restore damage dealt as HP. (Skill % activation)
 //Author Unknown (Initial Commit)
-#define SolID 15
+#define SolID 255
 
 //Sure Shot: A precision attack that always hits and does 1.5x damage. (Skill % activation)
 //Author Unknown (Initial Commit)
-#define SureShotID 5
+#define SureShotID 255
 
 //Corrosion: Decrease durability of enemy's weapon by User's level (Skill/2 % activation)
 //By Sme
-#define CorrosionID 125
+#define CorrosionID 255
 
 //Glacies: Add unit's Resistance to damage dealt. (Skill % activation)
 //By Sme
-#define GlaciesID 50
+#define GlaciesID 255
 
 //Great Shield: Negate all damage. (Defense % activation)
 //By Sme
-#define GreatShieldID 109
+#define GreatShieldID 255
 
 //Vengeance: Add half of damage taken to damage dealt. (Skill % activation)
 //By Sme
-#define VengeanceID 144
+#define VengeanceID 255
 
 //Range Skills
 
@@ -768,12 +774,12 @@
 
 //Push Skills: When HP is full, gain +5 to the given stat.
 //By Sme
-#define PushStrID 255
+#define PushStrID 68
 #define PushMagID 255
-#define PushSklID 255
-#define PushSpdID 255
-#define PushDefID 255
-#define PushResID 255
+#define PushSklID 69
+#define PushSpdID 70
+#define PushDefID 71
+#define PushResID 72
 
 //Lull Skills: Negate the effects of a rally for the given stat.
 //By Sme
@@ -791,15 +797,15 @@
 
 //Rally Skills: +4 to specified stat to allies within 2 tiles.
 //Author Unknown (Initial Commit)
-#define RallyStrID 68
-#define RallyMagID 69 //Requires Str/Mag Split
-#define RallySklID 70
-#define RallySpdID 71
-#define RallyLukID 72
-#define RallyDefID 73
-#define RallyResID 74
-#define RallyMovID 75
-#define RallySpectrumID 76
+#define RallyStrID 255
+#define RallyMagID 255 //Requires Str/Mag Split
+#define RallySklID 255
+#define RallySpdID 255
+#define RallyLukID 255
+#define RallyDefID 255
+#define RallyResID 255
+#define RallyMovID 255
+#define RallySpectrumID 255
 
 //Capture: Capture an enemy after defeating it with reduced stats.
 //By Tequila
@@ -928,7 +934,7 @@
 
 //Triangle Adept+: Doubles weapon triangle effects.
 //By Sme
-#define TriAdeptPlusID 255
+#define TriAdeptPlusID 212
 #define TriangleAdeptPlusID TriAdeptPlusID //Alias
 
 //Inspiring Tune: Refreshing a unit grants them +2 Pow/Def until the next turn.
@@ -980,8 +986,8 @@
 
 //Display-Only Skills
 
-#define CunningID 255
-#define NiceThighsID 255
+#define CunningID 59
+#define NiceThighsID 210
 #define PersonalityID 255
 
 
@@ -1011,3 +1017,50 @@
 #define FireBoostID 255
 #define DancingBladeID 255
 #define HeavyBladeID 255
+
+//Custom Skills
+
+#define StrongLiftID 5
+
+//PhantomSentine Skills
+
+#define DefenderID 14
+#define DelivererID 15
+
+#define ConcentrationID 16
+#define DivineProtectionID 17
+#define VolantID 24
+
+#define AirSuperiorityID 25
+#define GambleFE14ID 50
+#define GuardID 10
+#define HeartseekerID 80
+
+
+
+//Mikey_Seregon Skills
+
+#define SalvageBlowID 255
+#define WitchsBrewID 255
+
+#define BushidoID 255
+#define CompetitiveID 255
+#define EvenhandedID 255
+#define FierceCounterID 255
+#define HuntersBoonID 255
+#define OddShapedID 255
+#define PhilandererID 255
+#define PrideID 255
+#define ProdigyID 255
+#define RivalryID 255
+#define UnmaskID 255
+
+#define BibliophileID 255
+#define BoldTurtleID 255
+#define EntropyID 255
+#define GracefulRiderID 255
+#define HunterID 255
+#define ShortFuseID 255
+#define UnderdogID 255
+#define WingedRiderID 255
+#define WiseTurtleID 255

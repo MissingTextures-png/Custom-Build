@@ -365,6 +365,31 @@ HeavyBlade:
 POIN SkillTester
 WORD HeavyBladeID
 
+ALIGN 4
+AirSuperiority:
+#incbin "AirSuperiority/AirSuperiority.dmp"
+POIN SkillTester
+WORD AirSuperiorityID
+POIN FlierList
+
+ALIGN 4
+GambleFE14:
+#incbin "GambleFE14/GambleFE14.dmp"
+POIN SkillTester
+WORD GambleFE14ID
+
+ALIGN 4
+Guard:
+#incbin "Guard/Guard.dmp"
+POIN SkillTester
+WORD GuardID
+
+ALIGN 4
+Heartseeker:
+#incbin "Heartseeker/Heartseeker.dmp"
+POIN SkillTester
+WORD HeartseekerID
+
 #include "ElementBoost/ElementBoost.event"
 
 #ifdef MODULAR_PRE_BATTLE_SKILLS
