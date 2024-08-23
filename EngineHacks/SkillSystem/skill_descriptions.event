@@ -311,7 +311,6 @@ SkillDescription(EarthBoostID,SD_EarthBoost)
 SkillDescription(FireBoostID,SD_FireBoost)
 SkillDescription(DancingBladeID,SD_DancingBlade)
 SkillDescription(HeavyBladeID,SD_HeavyBlade)
-
 SkillDescription(LightbreakerID,SD_Lightbreaker)
 SkillDescription(DarkbreakerID,SD_Darkbreaker)
 SkillDescription(LightfaireID,SD_Lightfaire)

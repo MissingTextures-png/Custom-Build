@@ -372,6 +372,13 @@ POIN SkillTester
 WORD AirSuperiorityID
 POIN FlierList
 
+#ifndef FlierClasses
+#define FlierClasses "PegasusKnight FalcoKnight WyvernRider WyvernRider_F WyvernLord WyvernLord_F WyvernKnight WyvernKnight_F Manakete_2 Manakete_2_F Gargoyle Deathgoyle DracoZombie"
+#endif
+FlierList:
+BYTE FlierClasses 0
+"
+
 ALIGN 4
 GambleFE14:
 #incbin "GambleFE14/GambleFE14.dmp"
