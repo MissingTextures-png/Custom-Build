@@ -1,0 +1,8 @@
+NormalEnd=$3C
+GenericPortraitTable=$50
+Loop=$10
+NotFound=$38
+CheckUnit=$18
+CheckClass=$26
+Found=$34
+Exit=$42

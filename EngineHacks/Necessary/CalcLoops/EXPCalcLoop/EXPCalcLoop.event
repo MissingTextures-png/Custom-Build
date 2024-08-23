@@ -1,0 +1,18 @@
+
+	/* EXP calculation loop */
+
+#include "EXPCalcLoop.lyn.event"
+EXPCalcFunctions:
+POIN Paragon Blossom VoidCurse
+#ifdef MODULAR_EXP
+	POIN ModularEXP
+#endif // MODULAR_EXP
+
+POIN 0x0B74	//paddning
+POIN 0x0B74	//paddning
+POIN 0x0B74	//paddning
+POIN 0x0B74	//paddning
+POIN 0x0B74	//paddning
+WORD 0 // Terminator
+
+PROTECT 0x2B960 0x2B970

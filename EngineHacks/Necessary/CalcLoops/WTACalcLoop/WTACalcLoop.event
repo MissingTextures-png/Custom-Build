@@ -1,0 +1,23 @@
+
+	/* WTA calculation loop*/
+
+#include "WTACalcLoop.lyn.event"
+WTACalcFunctions:
+#ifdef ANIMA_TRIANGLE
+	POIN AnimaTriangle
+#endif // ANIMA_TRIANGLE
+POIN TriangleAdept
+POIN Poise
+#ifdef REAVER_SPLIT
+	POIN DoubleWeaponTriangle
+#endif // REAVER_SPLIT
+
+POIN 0x0B74	//paddning
+POIN 0x0B74	//paddning
+POIN 0x0B74	//paddning
+POIN 0x0B74	//paddning
+POIN 0x0B74	//paddning
+
+WORD 0 // Terminator
+
+PROTECT 0x2C830 0x2C840
