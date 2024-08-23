@@ -22,13 +22,13 @@
 
 // If commented, slayer and effectiveness will remain the same as they are in vanilla
 // Look at SkillSystem/Skills/EffectivenessSkills/Nullify/_README.txt for the full ramifications of uncommenting this
-//#define ENABLE_SLAYER_AND_EFFECTIVENESS_REWORK
+#define ENABLE_SLAYER_AND_EFFECTIVENESS_REWORK
 
 // If uncommented, a full str/split will be implemented without replacing any stats
 // USE_SAVE_EXPANSION will be used even if commented
 // TODO: Define an item ID for Spirit Dust (Mag statbooster) in "Strmag/Str Mag Split/Installer.event". Energy Ring is used by default!
 // Item icon for Spirit Dust is included! Define your icon ID in "Strmag/_Master Asm Installer.event". Default is Green Note.
-#define USE_STRMAG_SPLIT
+// #define USE_STRMAG_SPLIT
 
 // If uncommented, will use a full (EMS-based) save expansion instead of the "old" suspend expansion
 // Enabling this *will* break saves, but allows for higher stats and other things.
@@ -54,7 +54,7 @@
 #define TRAP_REWORK
 
 //If uncommented, will enable Dragon Veins.
-#define DRAGON_VEINS
+// #define DRAGON_VEINS
 
 //If uncommented, will enable Heal Tiles.
 #define HEAL_TILES
@@ -145,7 +145,7 @@
 
 //If uncommented, Reaver Split will be implemented.
 //Makes weapon ability 2 reaver bit just triangle reversal and weapon ability 3 bit 0x80 triple triangle effect.
-// #define REAVER_SPLIT
+#define REAVER_SPLIT
 
 //If uncommented, Cannot Crit will be implemented.
 //Makes weapon crit of 255 negate crits.
@@ -180,11 +180,11 @@
 // Set spell lists in ExternalHacks/GaidenMagic/GaidenSpellLists.event.
 // Set spell HP costs in "Item editors/Gaiden Spell Cost Tables.csv"
 // An example for stat screen display is in MSS page 4.
-#define GAIDEN_MAGIC
+// #define GAIDEN_MAGIC
 
 // If uncommented, Area of Effect (AoE) attacks will be enabled. 
 // See ExternalHacks/AoE/Installer.event for details. 
-#define INSTALL_AoE
+// #define INSTALL_AoE
 
 // If uncommented, Unlock staves will work on chests.
 // #define UNLOCK_WORKS_ON_CHESTS
@@ -202,7 +202,7 @@
 // If uncommented, passive stat boosts will not stack and only the 
 // first item in the inventory with passive stat boosts will apply them.
 // Setting the 0x00800000 bit in the item ability bitfield will enable passive boosts.
-// #define DONT_STACK_BOOSTS
+#define DONT_STACK_BOOSTS
 
 // =================================
 // = SKILL BEHAVIOUR CONFIGURATION =
@@ -215,7 +215,7 @@
 // #define ENABLE_GBA_LETHALITY
 
 // if set to false, only the skill will work, if set to true both the skill and the ability will work
-#define ENABLE_LEGACY_CANTO False
+#define ENABLE_LEGACY_CANTO True
 
 // if commented, enemies with Steal+ will steal as normal in vanilla (ie, the skill will be pretty much useless
 #define ENABLE_AI_STEAL_PLUS
@@ -228,7 +228,7 @@
 
 // If true Shadowgift/Lumina will check for staff ranks when checking for highest magic rank
 #define SHADOWGIFT_VIA_STAFF_RANK False
-#define LUMINA_VIA_STAFF_RANK True
+#define LUMINA_VIA_STAFF_RANK False
 
 // If commented, Poison Strike and Grisly Wound will not check whether no damage was dealt before applying additional damage.
 #define RESIDUAL_DAMAGE_REQUIRES_BATTLE_DAMAGE
@@ -320,7 +320,7 @@
 #define PRESS_SELECT_TO_VIEW_GROWTHS
 
 //If true, the stat colors for player units will reflect their growth in the stat.
-#define USE_STAT_COLORS True
+#define USE_STAT_COLORS False
 
 //If true, Fixed Growths mode will exist.
 #define FIXED_GROWTHS_MODE True
@@ -329,7 +329,7 @@
 #define FIXED_GROWTHS_FLAG_ID 0xEF
 
 //If true, passive growth boosters and metis tome will not affect growths in fixed growths mode.
-#define FIXED_GROWTHS_DONT_BOOST True
+#define FIXED_GROWTHS_DONT_BOOST False
 
 //If true, enemy/NPC autolevels will use fixed growths as well.
 #define ENEMY_NPC_FIXED_GROWTHS False
@@ -337,7 +337,7 @@
 
 //If true, the effects of multiple passive growth boosters can stack.
 //Setting the 0x00800000 bit in the item ability bitfield will enable passive boosts.
-#define STACKABLE_GROWTH_BOOSTS True
+#define STACKABLE_GROWTH_BOOSTS False
 
 //Amount for Metis Tome to boost growths by
 #define METIS_TOME_BOOST 5
