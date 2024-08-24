@@ -64,29 +64,29 @@ b		ShowStats2
 ShowGrowths:
 ldr		r0,[sp,#0xC]
 ldr		r0,[r0,#4]		@str growth getter
-draw_growth_at 18, 3
+draw_growth_at 17, 3
 ldr		r0,[sp,#0xC]
 ldr		r0,[r0,#8]		@mag growth getter
-draw_growth_at 18, 5
+draw_growth_at 17, 5
 ldr		r0,[sp,#0xC]
 ldr		r0,[r0,#12]		@skl growth getter
-draw_growth_at 18, 7
+draw_growth_at 17, 7
 ldr		r0,[sp,#0xC]
 ldr		r0,[r0,#16]		@spd growth getter
-draw_growth_at 18, 9
+draw_growth_at 17 9
 ldr		r0,[sp,#0xC]
 ldr		r0,[r0,#20]		@luk growth getter
-draw_growth_at 18, 11
+draw_growth_at 17, 11
 ldr		r0,[sp,#0xC]
 ldr		r0,[r0,#24]		@def growth getter
-draw_growth_at 18, 13
+draw_growth_at 17, 13
 ldr		r0,[sp,#0xC]
 ldr		r0,[r0,#28]		@res growth getter
-draw_growth_at 18, 15
+draw_growth_at 17, 15
+draw_textID_at 13, 17, textID=0x4E9, growth_func=1 @hp name
 ldr		r0,[sp,#0xC]
 ldr		r0,[r0]			@hp growth getter (not displaying because there's no room atm)
-draw_growth_at 18, 17
-draw_textID_at 13, 17, textID=0x4E9, growth_func=1 @hp name
+draw_growth_at 17, 17
 b		NextColumn
 .ltorg
 
@@ -194,14 +194,14 @@ ldrb	r1,[r0]
 mov		r2,#0x5
 orr		r1,r2
 strb	r1,[r0]
-ldr		r0,=CopyToBG
+ldr		r0,=BgMapFillRect
 mov		r14,r0
 ldr		r0,=Const_2003D2C
 ldr		r1,=Const_2022D40
 mov		r2,#0x12
 mov		r3,#0x12
 .short	0xF800
-ldr		r0,=CopyToBG
+ldr		r0,=BgMapFillRect
 mov		r14,r0
 ldr		r0,=Const_200472C
 ldr		r1,=Const_2023D40
@@ -236,6 +236,6 @@ bx		r14
 Const2_2028E70:
 .long 0x02028E70
 
-.include "GetTalkee.asm"
+.include "GetTalkee.s"
 
 .ltorg
