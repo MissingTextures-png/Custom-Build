@@ -377,7 +377,7 @@ POIN FlierList
 #endif
 FlierList:
 BYTE FlierClasses 0
-"
+
 
 ALIGN 4
 GambleFE14:
