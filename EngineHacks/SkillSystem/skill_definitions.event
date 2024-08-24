@@ -401,7 +401,7 @@
 #define TomefaireID 42
 #define LightfaireID 73
 #define DarkfaireID 74
-#define StaffFaireID 255
+#define StafffaireID 255
 
 //Fiery Blood: +4 damage when HP is not at max.
 //Author Unknown (Initial Commit)
