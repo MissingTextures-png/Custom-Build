@@ -288,7 +288,7 @@
 
 //Re-Move: Luck% chance to get another action at end of turn.
 //By Sme
-#define ReMoveID 208
+#define ReMoveID 255
 
 //Savage Blow: After attacking, enemies within 2 tiles take 20% damage.
 //By circleseverywhere

@@ -172,3 +172,12 @@ Select an area to Attack. Press L/R to Rotate.[X]
 
 ## UM_AoEHealHelp
 Select an area to Heal. Press L/R to Rotate.[X]
+
+## EquipEquipmentDescription
+Ready this equipment.[X]
+
+## UnequipName
+Unequip[X]
+
+## UnequipEquipmentDescription
+Remove this equipment.[X]
