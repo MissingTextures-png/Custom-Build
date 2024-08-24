@@ -783,7 +783,8 @@
   mov     r2, #0xC1
   lsl     r2, r2, #0x6
   blh     BgMap_ApplyTsa
-  
+  ldr r0, [r6, #0xC]
+  blh DrawUnitEquippedItem
   cmp     r5, #0x0
   bne     SS_DoneEquipHighlightBar
   

@@ -135,7 +135,7 @@
 
 // If uncommented, Leadership Stars will be implemented.
 // Go to LeadershipStars/LeadershipStars.event to edit settings.
-#define LEADERSHIP_STARS
+// #define LEADERSHIP_STARS
 
 // If uncommented, Biorhythm will be implemented.
 // Go to "Biorhythm/Biorhythm.event" to edit settings.

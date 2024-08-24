@@ -85,7 +85,7 @@ POP
 
 ALIGN 4
 gSkillTester:
-POIN SkillTester
+POIN SkillTester+1
 
 #include "_UnitMenuDefs.event"
 #include "_ItemUnitMenuDefs.event"
@@ -109,8 +109,8 @@ ItemUnitMenu:
 
 IUM_Use
 IUM_Equip
-MenuCommand($697, EquipEquipmentDescription, GreenText, EquipEquipmentUsability, EquipEquipment)
-MenuCommand(UnequipName, UnequipEquipmentDescription, GreenText, UnequipEquipmentUsability, UnequipEquipment)
+MenuCommand($697, SD_Sol, GreenText, EquipEquipmentUsability, EquipEquipment)
+MenuCommand(SD_Adept, SD_Luna, GreenText, UnequipEquipmentUsability, UnequipEquipment)
 IUM_Trade
 IUM_Discard
 
@@ -121,3 +121,7 @@ PUSH
 ORG $59D120
 POIN ItemUnitMenu
 POP
+
+//EquipEquipmentDescription is SD_Sol
+//UnequipName is SD_Adept
+//UnequipEquipmentDescription is SD_Luna

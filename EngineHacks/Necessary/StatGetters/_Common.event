@@ -1,5 +1,6 @@
 #ifndef MODULAR_GETTER_COMMON_EVENT
 #define MODULAR_GETTER_COMMON_EVENT
+#define rEquipmentBonus(stat) "rAdd; rWithConstant(stat); rCallExternal(GetEquipmentStatBonus^1)"
 
 prHalveIfRescuing:
 	rIfUnitHasState(US_RESCUING)
