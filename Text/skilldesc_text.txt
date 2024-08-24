@@ -61,7 +61,7 @@ Luna: Negates enemy defenses.[N]
 (Skill % activation)[X]
 
 ## SD_Sol
-Sol: Restore damage dealt as HP.[N]
+Sol: Testing, lol.[N]
 (Skill % activation)[X]
 
 ## SD_Aether

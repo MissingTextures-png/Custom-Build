@@ -72,7 +72,13 @@ ORG SkillIcon(BowbreakerID)
 #incbin "SkillIcons/Bowbreaker.dmp"
 
 ORG SkillIcon(TomebreakerID)
-#incbin "SkillIcons/Tomebreaker.dmp"
+#incbin "SkillIcons/Animabreaker.dmp"
+
+ORG SkillIcon(LightbreakerID)
+#incbin "SkillIcons/Lightbreaker.dmp"
+
+ORG SkillIcon(DarkbreakerID)
+#incbin "SkillIcons/Darkbreaker.dmp"
 
 ORG SkillIcon(AegisID)
 #incbin "SkillIcons/Aegis.dmp"
@@ -126,7 +132,13 @@ ORG SkillIcon(BowfaireID)
 #incbin "SkillIcons/Bowfaire.dmp"
 
 ORG SkillIcon(TomefaireID)
-#incbin "SkillIcons/Tomefaire.dmp"
+#incbin "SkillIcons/Animafaire.dmp"
+
+ORG SkillIcon(LightfaireID)
+#incbin "SkillIcons/Lightfaire.dmp"
+
+ORG SkillIcon(DarkfaireID)
+#incbin "SkillIcons/Darkfaire.dmp"
 
 ORG SkillIcon(CritUpID)
 #incbin "SkillIcons/CritUp.dmp"
