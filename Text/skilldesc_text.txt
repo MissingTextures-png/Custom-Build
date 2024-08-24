@@ -99,7 +99,7 @@ Bowbreaker: +50 Hit/Avo when[N]
 enemy has a bow equipped.[X]
 
 ## SD_Tomebreaker
-Tomebreaker: +50 Hit/Avo when[N]
+Animabreaker: +50 Hit/Avo when[N]
 enemy has a tome equipped.[X]
 
 ## SD_Aegis
@@ -175,7 +175,7 @@ Bowfaire: +4 damage[N]
 when equipping a bow.[X]
 
 ## SD_Tomefaire
-Tomefaire: +4 damage[N]
+Animafaire: +4 damage[N]
 when equipping a tome.[X]
 
 ## SD_CritUp
