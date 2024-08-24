@@ -92,4 +92,4 @@ page_end
 
 .ltorg
 
-.include "GetTalkee.s"
+.include "GetTalkee.asm"
