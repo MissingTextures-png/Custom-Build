@@ -78,17 +78,17 @@ push	{r4-r7}
 add		sp,#-0x10
 
 @First, check if all this stuff is even enabled
-ldr		r0,=OptionByte2
-ldrb	r0,[r0]
-.if FE8 == 1
-mov		r1,#0x80
-.else
+
+
+
+
+
 @ NOTE: this is either the fe6-specific bit, or teq has added an extra setting in the original impl of this
-mov		r1,#0x20
-.endif
-tst		r0,r1
-beq		HpBars					@if bit isn't set, hp bars are on (at the very least)
-b		GoBack
+
+
+
+
+
 
 HpBars:
 mov		r0,#0
@@ -132,6 +132,13 @@ str		r1,[sp,#0xC]			@constant to determine where things get drawn
 	mov		r0,#maximum_hp
 	ldsb	r0,[r4,r0]
 @.endif
+
+ldr      r1,=OptionByte2
+ldrb    r1,[r1]
+mov   r2,#0x20
+tst      r1,r2
+bne    CheckIfSelected
+
 push {r7}
 mov		r7,r0
 @.if FE8 == 1
