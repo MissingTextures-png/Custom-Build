@@ -36,7 +36,7 @@ StealStaff6C_MenuPortrait:
 StealStaff_MenuItemSelect:
 #include "StealStaff_MenuItemSelect.lyn.event"
 //text of message to display if you cannot select item
-WORD ItemMenuGrayStealText
+WORD SD_Impale
 
 // 0x59D088 is Steal command's 6Cmenu's pointer list
 StealStaff_6CMenu: 
