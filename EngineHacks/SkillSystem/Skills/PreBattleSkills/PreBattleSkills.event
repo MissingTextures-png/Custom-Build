@@ -397,6 +397,57 @@ Heartseeker:
 POIN SkillTester
 WORD HeartseekerID
 
+ALIGN 4
+Bushido:
+#incbin "Bushido/Bushido.dmp"
+POIN SkillTester
+WORD BushidoID
+
+ALIGN 4
+Competitive:
+#incbin "Competitive/Competitive.dmp"
+POIN SkillTester
+WORD CompetitiveID
+
+ALIGN 4
+Evenhanded:
+#incbin "Evenhanded/Evenhanded.dmp"
+POIN SkillTester
+WORD EvenhandedID
+
+ALIGN 4
+FierceCounter:
+#incbin "FierceCounter/FierceCounter.dmp"
+POIN SkillTester
+WORD FierceCounterID
+
+ALIGN 4
+HuntersBoon:
+#incbin "HuntersBoon/HuntersBoon.dmp"
+POIN SkillTester
+WORD HuntersBoonID
+
+ALIGN 4
+OddShaped:
+#incbin "OddShaped/OddShaped.dmp"
+POIN SkillTester
+WORD OddShapedID
+
+#include "ProwessSkills/ProwessSkills.event"
+
+ALIGN 4
+Rivalry:
+#incbin "Rivalry/Rivalry.dmp"
+POIN SkillTester
+POIN AuraSkillCheck
+WORD RivalryID
+
+ALIGN 4
+Unmask:
+#incbin "Unmask/Unmask.dmp"
+POIN SkillTester
+WORD UnmaskID
+
 #include "ElementBoost/ElementBoost.event"
 
 #ifdef MODULAR_PRE_BATTLE_SKILLS

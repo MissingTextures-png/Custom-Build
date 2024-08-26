@@ -1040,19 +1040,20 @@
 
 //Mikey_Seregon Skills
 
-#define SalvageBlowID 255
+#define SalvageBlowID 66
 #define WitchsBrewID 255
+// 67
 
-#define BushidoID 255
-#define CompetitiveID 255
-#define EvenhandedID 255
-#define FierceCounterID 255
-#define HuntersBoonID 255
-#define OddShapedID 255
-#define PhilandererID 255
-#define PrideID 255
-#define ProdigyID 255
-#define RivalryID 255
+#define BushidoID 124
+#define CompetitiveID 125
+#define EvenhandedID 246
+#define FierceCounterID 109
+#define HuntersBoonID 144
+#define OddShapedID 247
+#define PhilandererID 250
+#define PrideID 251
+#define ProdigyID 252
+#define RivalryID 253
 #define UnmaskID 255
 
 #define BibliophileID 255
