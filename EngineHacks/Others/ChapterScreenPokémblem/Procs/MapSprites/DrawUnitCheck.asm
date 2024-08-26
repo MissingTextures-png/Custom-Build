@@ -18,6 +18,13 @@ and   r2, r3
 cmp   r2, #0x0
 bne   Return                    @ Unit is dead, don't draw
 
+@ Check whether unit is hidden
+ldrb  r2, [r1, #0xE]
+mov   r3, #0x1
+and   r2, r3
+cmp   r2, #0x0
+bne   Return                    @ Unit is hidden, don't draw
+
 mov   r0, #0x1
 Return:
 bx    r14
