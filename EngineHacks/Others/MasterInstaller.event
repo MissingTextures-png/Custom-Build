@@ -35,3 +35,6 @@
 
 #include "FE8-Convoy_Partition_and_Item_Combining/FE8-Convoy_Stuff_EA.event"
 // by Tequila
+
+// #include "StatScreenfx/StatScreenfx.event"
+// by Mokha. Install this separately through FEBuilder. Otherwise, the graphics get messed up.
