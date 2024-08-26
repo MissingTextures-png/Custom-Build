@@ -38,3 +38,6 @@
 
 // #include "StatScreenfx/StatScreenfx.event"
 // by Mokha. Install this separately through FEBuilder. Otherwise, the graphics get messed up.
+
+#include "StaffHealAmount/HealAmountSetup.event"
+// by Teraspark, SomeonePassingBy
