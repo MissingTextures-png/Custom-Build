@@ -345,6 +345,8 @@
 //If true, growths will be calculated as (char growth + class growth).
 #define USE_CHAR_AND_CLASS_GROWTHS False
 
+#define SCROLLING_STATSCREEN_BACKGROUND
+
 //The growth rate ranges for each stat color and the colors themselves can be edited in
 //Necessary/MSS/DisplayGrowthsOptions/GrowthColorsTable.event and NewPalette.event, respectively.
 //If you are using Str/Mag Split, these are instead located in
