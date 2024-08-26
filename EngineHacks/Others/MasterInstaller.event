@@ -6,8 +6,8 @@
 #include "ExtendWeaponDescBox/Installer.event"
 // by Vesly
 
-//#include "ChapterScreenPokémblem/ChapterScreen.event"
-// by Huichelaar and Vesly
+// #include "ChapterScreenPokémblem/ChapterScreen.event"
+// by Huichelaar and Vesly. Commented out because it doesn't work when installing here. Try installing through FEBuilder
 
 #include "SupplyView/SupplyView.event"
 // by AuraWolf
