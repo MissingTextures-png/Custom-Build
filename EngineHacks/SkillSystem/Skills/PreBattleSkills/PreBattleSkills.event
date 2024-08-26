@@ -433,7 +433,7 @@ OddShaped:
 POIN SkillTester
 WORD OddShapedID
 
-#include "ProwessSkills/ProwessSkills.event"
+// #include "ProwessSkills/ProwessSkills.event"
 
 ALIGN 4
 Rivalry:
