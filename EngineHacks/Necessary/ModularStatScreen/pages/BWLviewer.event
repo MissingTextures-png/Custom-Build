@@ -1,0 +1,6 @@
+// Code for viewing BWL data
+
+PUSH
+ORG $86FE4
+SHORT $46C0 $46C0
+POP

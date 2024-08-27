@@ -206,7 +206,7 @@ add    r7, #8
 @ Next let's draw Gaiden spells if the hack is installed.
 draw_gaiden_spells_at 13, 13, GaidenStatScreen @ GaidenStatScreen is a pointer to the routine, GaidenStatScreen.
 
-blh DrawBWLNumbers
+// blh DrawBWLNumbers
 
 page_end
 
