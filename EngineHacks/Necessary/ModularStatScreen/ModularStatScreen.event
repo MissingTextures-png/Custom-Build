@@ -294,8 +294,6 @@
 
 
   #include "RText.event"
-  
-//  #include "pages/BWLviewer.event"
 
 #else // _FE8_
   ERROR Modular Stat Screen hack is for FE8
