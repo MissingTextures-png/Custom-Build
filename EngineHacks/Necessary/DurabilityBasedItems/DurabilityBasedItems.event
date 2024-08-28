@@ -67,7 +67,7 @@ POP
 #define DurabilityItemEnd "BYTE 0"
 #define DurabilityIcon(itemID,iconSheetID) "BYTE itemID iconSheetID"
 #define DurabilityIconEnd "SHORT 0"
-
+#define StatBoostItem 0x5B //Item ID for the stat boosters.
 
 ALIGN 4
 	DurabilityBasedItemNameList: //used for item name

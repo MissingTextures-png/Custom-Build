@@ -3,7 +3,7 @@ PUSH
 	jumpToHack(RevampedGetStatBoost)
 POP
 
-#define StatBoostItem 0x5B //Item ID for the stat boosters.
+//#define StatBoostItem 0x5B //Item ID for the stat boosters.
 
 ALIGN 4
 RevampedGetStatBoost:
