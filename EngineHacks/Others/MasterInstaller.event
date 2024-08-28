@@ -41,3 +41,6 @@
 
 #include "StaffHealAmount/HealAmountSetup.event"
 // by Teraspark, SomeonePassingBy
+
+#include "RevampedStatBoost/RevampedGetStatBoost.event"
+// by Mikey Seregon

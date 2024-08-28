@@ -1,0 +1,142 @@
+PUSH
+	ORG 0x2F808
+	jumpToHack(RevampedGetStatBoost)
+POP
+
+#define StatBoostItem 0x5B //Item ID for the stat boosters.
+
+ALIGN 4
+RevampedGetStatBoost:
+#incbin "RevampedGetStatBoost.dmp"
+POIN StatBoostTable
+WORD StatBoostItem
+POIN StatBoostTextTable
+BYTE 0 0 0 0
+
+ALIGN 4
+StatBoostTextTable:
+SHORT 0
+SHORT 0x001C // Max HP increased.
+SHORT 0x0013 // Strength increased.
+SHORT 0x0014 // Magic increased.
+SHORT 0x0015 // Skill increased.
+SHORT 0x0016 // Speed increased.
+SHORT 0x0017 // Luck increased.
+SHORT 0x0018 // Defense increased.
+SHORT 0x0019 // Resistance increased.
+SHORT 0x001A // Movement increased.
+SHORT 0x001B // Constitution increased.
+SHORT 0
+WORD 0
+
+//#define StatBonus(HPB,StrB,MagB,SklB,SpdB,DefB,ResB,LckB,MovB,ConB) "BYTE HPB StrB SklB SpdB DefB ResB LckB MovB ConB MagB 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0"
+
+StatBoostTable:
+StatBonus(0,0,0,0,0,0,0,0,0,0) // Nothing
+StatBonus(7,0,0,0,0,0,0,0,0,0) // 7 HP
+StatBonus(0,2,0,0,0,0,0,0,0,0) // 2 Str
+StatBonus(0,0,0,0,0,0,0,0,0,0) // 2 Mag
+StatBonus(0,0,0,2,0,0,0,0,0,0) // 2 Skl
+StatBonus(0,0,0,0,2,0,0,0,0,0) // 2 Spd
+StatBonus(0,0,0,0,0,0,0,2,0,0) // 2 Lck
+StatBonus(0,0,0,0,0,2,0,0,0,0) // 2 Def
+StatBonus(0,0,0,0,0,0,2,0,0,0) // 2 Res
+StatBonus(0,0,0,0,0,0,0,0,2,0) // 2 Mov
+StatBonus(0,0,0,0,0,0,0,0,0,2) // 2 Con
+
+/*
+
+	In EngineHacks/Necessary/DurabilityBasedItems/DurabilityBasedItems.event add:
+
+	ALIGN 4
+	DurabilityBasedItemNameList: //used for item name
+	DurabilityTextEntry(0xFFFF,True,SkillDescTable)
+	DurabilityTextEntry(0xFFFD,False,BoostNameTable)
+	DurabilityTextEnd
+
+	ALIGN 4
+	DurabilityBasedItemDescList: //used for item desc
+	DurabilityTextEntry(0xFFFF,False,SkillDescTable)
+	DurabilityTextEntry(0xFFFD,False,BoostDescriptionTable)
+	DurabilityTextEnd
+
+	ALIGN 4
+	DurabilityItemList: //used for durability
+	DurabilityItem(SkillScroll)
+	DurabilityItem(StatBoostItem)
+	DurabilityItemEnd
+
+	ALIGN 4
+	DurabilityBasedItemIconList: //used for icons
+	DurabilityIcon(SkillScroll,5)
+	DurabilityIcon(StatBoostItem,6)
+	DurabilityIconEnd
+
+	ALIGN 4
+	BoostNameTable:
+	SHORT 0x0000
+	SHORT 0x03D4 //Seraph Robe
+	SHORT 0x03D5 //Energy Ring
+	SHORT SpiritDustName //Spirit Dust
+	SHORT 0x03D6 //Secret Book
+	SHORT 0x03D7 //Speedwings
+	SHORT 0x03D8 //Godess Icon
+	SHORT 0x03D9 //Dragon Shield
+	SHORT 0x03DA //Talisman
+	SHORT 0x03DB //Boots
+	SHORT 0x03DC //Body Ring
+	SHORT 0x0000
+	SHORT 0x0000
+		
+	BoostDescriptionTable:
+	SHORT 0x0000
+	SHORT 0x0483 //Seraph Robe
+	SHORT 0x0484 //Energy Ring
+	SHORT SpiritDustDescription //Spirit Dust
+	SHORT 0x0485 //Secret Book
+	SHORT 0x0486 //Speedwings
+	SHORT 0x0487 //Godess Icon
+	SHORT 0x0488 //Dragon Shield
+	SHORT 0x0489 //Talisman
+	SHORT 0x048A //Boots
+	SHORT 0x048B //Body Ring
+	SHORT 0x0000
+	SHORT 0x0000
+
+
+	In EngineHacks/Necessary/IconRework/IconRework.event:
+
+	[...]
+
+	#define ICON_SHEET_COUNT 6
+
+	[...]
+
+	InjectIconGfxGetter(6, (prGetStatBoostIconGfx+1))
+
+	[...]
+
+
+	prGetStatBoostIconGfx:
+		#incbin "asm/GetSheetIconGfx.bin"
+		POIN StatBoostIcons
+
+	[...]
+
+
+	In EngineHacks/Necessary/IconRework/IconRework_internal.event:
+
+	[...]
+
+	ALIGN 4
+	StatBoostIcons:
+	#incext Png2Dmp "bin/ItemBoostIcons.png"
+
+	[...]
+
+	In the item table set the correspondent name and description ID,
+	an item effect between 0x10 and 0x18, and icon 0xFF for the item slot
+	that will be used for this.
+
+
+*/

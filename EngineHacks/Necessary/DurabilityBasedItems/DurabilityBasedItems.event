@@ -88,6 +88,37 @@ DurabilityBasedItemIconList: //used for icons
 DurabilityIcon(SkillScroll,5)
 DurabilityIconEnd
 
+	ALIGN 4
+	BoostNameTable:
+	SHORT 0x0000
+	SHORT 0x03D4 //Seraph Robe
+	SHORT 0x03D5 //Energy Ring
+	SHORT 0x0001 //Spirit Dust
+	SHORT 0x03D6 //Secret Book
+	SHORT 0x03D7 //Speedwings
+	SHORT 0x03D8 //Godess Icon
+	SHORT 0x03D9 //Dragon Shield
+	SHORT 0x03DA //Talisman
+	SHORT 0x03DB //Boots
+	SHORT 0x03DC //Body Ring
+	SHORT 0x0000
+	SHORT 0x0000
+		
+	BoostDescriptionTable:
+	SHORT 0x0000
+	SHORT 0x0483 //Seraph Robe
+	SHORT 0x0484 //Energy Ring
+	SHORT 0x0001 //Spirit Dust
+	SHORT 0x0485 //Secret Book
+	SHORT 0x0486 //Speedwings
+	SHORT 0x0487 //Godess Icon
+	SHORT 0x0488 //Dragon Shield
+	SHORT 0x0489 //Talisman
+	SHORT 0x048A //Boots
+	SHORT 0x048B //Body Ring
+	SHORT 0x0000
+	SHORT 0x0000
+
 /*
 checklist
 Y - Durability 

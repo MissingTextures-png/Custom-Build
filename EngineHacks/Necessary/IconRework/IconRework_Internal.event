@@ -119,4 +119,8 @@ ALIGN 4
 WRankIcons:
 #incext Png2Dmp "bin/WRankIcons.png"
 
+ALIGN 4
+	StatBoostIcons:
+	#incext Png2Dmp "bin/ItemBoostIcons.png"
+
 #endif // HAX_ICON_REWORK_INTERNAL
