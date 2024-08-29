@@ -44,3 +44,6 @@
 
 #include "RevampedStatBoost/RevampedGetStatBoost.event"
 // by Mikey Seregon
+
+#include "Tonic/Tonics.event"
+// by Pikmin

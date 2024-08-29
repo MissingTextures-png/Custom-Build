@@ -73,24 +73,28 @@ ALIGN 4
 	DurabilityBasedItemNameList: //used for item name
 	DurabilityTextEntry(0xFFFF,True,SkillDescTable)
 	DurabilityTextEntry(0xFFFD,False,BoostNameTable)
+	DurabilityTextEntry(0xFFFC,False,TonicNameTable)
 	DurabilityTextEnd
 
 	ALIGN 4
 	DurabilityBasedItemDescList: //used for item desc
 	DurabilityTextEntry(0xFFFF,False,SkillDescTable)
 	DurabilityTextEntry(0xFFFD,False,BoostDescriptionTable)
+	DurabilityTextEntry(0xFFFC,False,TonicDescriptionTable)
 	DurabilityTextEnd
 
 	ALIGN 4
 	DurabilityItemList: //used for durability
 	DurabilityItem(SkillScroll)
 	DurabilityItem(StatBoostItem)
+	DurabilityItem(Tonic)
 	DurabilityItemEnd
 
 	ALIGN 4
 	DurabilityBasedItemIconList: //used for icons
 	DurabilityIcon(SkillScroll,5)
 	DurabilityIcon(StatBoostItem,6)
+	DurabilityIcon(Tonic,7)
 	DurabilityIconEnd
 
 	ALIGN 4
@@ -121,6 +125,37 @@ ALIGN 4
 	SHORT 0x0489 //Talisman
 	SHORT 0x048A //Boots
 	SHORT 0x048B //Body Ring
+	SHORT 0x0000
+	SHORT 0x0000
+	
+	ALIGN 4
+	TonicNameTable:
+	SHORT 0x0000
+	SHORT 0x00D0 //HP
+	SHORT 0x00D1 //Pow
+	SHORT 0x00D2 //Skl
+	SHORT 0x00D3 //Spe
+	SHORT 0x00D4 //Def
+	SHORT 0x00D5 //Res
+	SHORT 0x00D6 //Luk
+	SHORT 0x0001 //Mag
+	SHORT 0x00D7 //Rainbow
+	SHORT 0x0000 
+	SHORT 0x0000
+	SHORT 0x0000
+		
+	TonicDescriptionTable:
+	SHORT 0x0000
+	SHORT 0x00D8 //HP
+	SHORT 0x00D9 //Pow
+	SHORT 0x00DA //Skl
+	SHORT 0x00DB //Spe
+	SHORT 0x00DC //Def
+	SHORT 0x00DD //Res
+	SHORT 0x00DE //Luk
+	SHORT 0x0001 //Mag
+	SHORT 0x00DF //Rainbow
+	SHORT 0x0000 
 	SHORT 0x0000
 	SHORT 0x0000
 
