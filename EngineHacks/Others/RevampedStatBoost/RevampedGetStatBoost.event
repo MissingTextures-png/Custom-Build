@@ -18,7 +18,6 @@ StatBoostTextTable:
 SHORT 0
 SHORT 0x001C // Max HP increased.
 SHORT 0x0013 // Strength increased.
-SHORT 0x0014 // Magic increased.
 SHORT 0x0015 // Skill increased.
 SHORT 0x0016 // Speed increased.
 SHORT 0x0017 // Luck increased.
@@ -26,23 +25,45 @@ SHORT 0x0018 // Defense increased.
 SHORT 0x0019 // Resistance increased.
 SHORT 0x001A // Movement increased.
 SHORT 0x001B // Constitution increased.
+SHORT 0x00E1 // (All stats)
+SHORT 0x001C // Max HP increased.
+SHORT 0x0013 // Strength increased.
+SHORT 0x0015 // Skill increased.
+SHORT 0x0016 // Speed increased.
+SHORT 0x0017 // Luck increased.
+SHORT 0x0018 // Defense increased.
+SHORT 0x0019 // Resistance increased.
+SHORT 0x00E2 // (Mov Decreased)
+SHORT 0x001B // Constitution increased.
+SHORT 0x00E3 // (Con Decreased)
 SHORT 0
 WORD 0
 
-//#define StatBonus(HPB,StrB,MagB,SklB,SpdB,DefB,ResB,LckB,MovB,ConB) "BYTE HPB StrB SklB SpdB DefB ResB LckB MovB ConB MagB 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0"
+//#define StatBonus(HPB,StrB,SklB,SpdB,DefB,ResB,LckB,MovB,ConB,AllB,HP2B,Str2B,Skl2B,Spd2B,Def2B,Res2B,Lck2B,Mov2B,Con2B,Con3B) "BYTE HPB StrB SklB SpdB DefB ResB LckB MovB ConB AllB HP2B Str2B Skl2B Spd2B Def2B Res2B Lck2B Mov2B Con2B Con3B 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0"
 
 StatBoostTable:
 StatBonus(0,0,0,0,0,0,0,0,0,0) // Nothing
-StatBonus(7,0,0,0,0,0,0,0,0,0) // 7 HP
+StatBonus(6,0,0,0,0,0,0,0,0,0) // 6 HP
 StatBonus(0,2,0,0,0,0,0,0,0,0) // 2 Str
-StatBonus(0,0,0,0,0,0,0,0,0,0) // 2 Mag
-StatBonus(0,0,0,2,0,0,0,0,0,0) // 2 Skl
+StatBonus(0,0,0,4,0,0,0,0,0,0) // 4 Skl
 StatBonus(0,0,0,0,2,0,0,0,0,0) // 2 Spd
-StatBonus(0,0,0,0,0,0,0,2,0,0) // 2 Lck
+StatBonus(0,0,0,0,0,0,0,4,0,0) // 4 Lck
 StatBonus(0,0,0,0,0,2,0,0,0,0) // 2 Def
 StatBonus(0,0,0,0,0,0,2,0,0,0) // 2 Res
-StatBonus(0,0,0,0,0,0,0,0,2,0) // 2 Mov
+StatBonus(0,0,0,0,0,0,0,0,1,0) // 1 Mov
 StatBonus(0,0,0,0,0,0,0,0,0,2) // 2 Con
+StatBonus(2,2,0,2,2,2,2,2,0,0) // 2 All
+StatBonus(2,0,0,0,0,0,0,0,0,0) // 2 HP
+StatBonus(0,1,0,0,0,0,0,0,0,0) // 1 Str
+StatBonus(0,0,0,2,0,0,0,0,0,0) // 2 Skl
+StatBonus(0,0,0,0,1,0,0,0,0,0) // 1 Spd
+StatBonus(0,0,0,0,0,0,0,2,0,0) // 2 Lck
+StatBonus(0,0,0,0,0,1,0,0,0,0) // 1 Def
+StatBonus(0,0,0,0,0,0,1,0,0,0) // 1 Res
+StatBonus(1,1,0,1,1,1,1,1,-1,0) // 1 Mov cursed
+StatBonus(0,0,0,0,0,0,0,0,0,1) // 1 Con
+StatBonus(0,0,0,0,0,0,0,0,0,-1) // -1 Con
+
 
 /*
 

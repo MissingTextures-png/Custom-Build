@@ -1,0 +1,10 @@
+TO DO:
+
+Go to Hex address B42A8C
+In 0D (Right after FF) change 00 to 5B
+
+Next line...
+replace the 00 00 after FF 05 with 5B 06
+
+Boots give +1 Con
+Body Ring gives Nothing
