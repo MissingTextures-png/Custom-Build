@@ -1022,6 +1022,8 @@
 
 #define StrongLiftID 5
 
+#define CamaraderieAltID 67
+
 //PhantomSentine Skills
 
 #define DefenderID 14

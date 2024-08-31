@@ -167,6 +167,12 @@ POIN AuraSkillCheck
 WORD VolantID
 
 ALIGN 4
+CamaraderieAlt:
+#incbin "CamaraderieAlt/CamaraderieAlt.dmp"
+POIN AuraSkillCheck
+WORD CamaraderieAltID
+
+ALIGN 4
 KeepUp:
 #incbin "KeepUp/KeepUp.dmp"
 POIN AuraSkillCheck
