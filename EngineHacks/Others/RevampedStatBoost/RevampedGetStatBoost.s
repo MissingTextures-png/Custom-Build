@@ -96,9 +96,9 @@ ldrb	r1, [r0, #0x07]
 ldrb	r2, [r4, #0x1D]
 add		r1, r1, r2
 strb	r1, [r4, #0x1D]
-ldrb	r2, [r0, #0x08]
+ldrb	r1, [r0, #0x08]
 ldrb	r2, [r4, #0x1A]
-add		r2, r2, r1
+add		r1, r1, r2
 strb	r1, [r4, #0x1A]
 mov		r1, r4
 add		r1, #0x3A

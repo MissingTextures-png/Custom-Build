@@ -60,9 +60,9 @@ StatBonus(0,0,0,0,1,0,0,0,0,0) // 1 Spd
 StatBonus(0,0,0,0,0,0,0,2,0,0) // 2 Lck
 StatBonus(0,0,0,0,0,1,0,0,0,0) // 1 Def
 StatBonus(0,0,0,0,0,0,1,0,0,0) // 1 Res
-StatBonus(1,1,0,1,1,1,1,1,-1,0) // 1 Mov cursed
+StatBonus(1,1,0,1,1,1,1,1,0xFF,0) // 1 Mov cursed
 StatBonus(0,0,0,0,0,0,0,0,0,1) // 1 Con
-StatBonus(0,0,0,0,0,0,0,0,0,-1) // -1 Con
+StatBonus(0,0,0,0,0,0,0,0,0,0xFF) // -1 Con
 
 
 /*
