@@ -409,7 +409,7 @@
 
 //Fortune: This unit cannot be crit.
 //By Sme
-#define FortuneID 254
+#define FortuneID 255
 
 //Frenzy: For every 4 damage taken, +1 to damage dealt.
 //By Tequila
@@ -732,6 +732,10 @@
 //Author Unknown (Initial Commit)
 #define ArmsthriftID 120
 
+//Blessing: Guaranteed to not consume weapon durability.
+//By Snerdels
+#define BlessingID 254
+
 //Dazzle: Opponents cannot counterattack this unit.
 //By circleseverywhere
 #define DazzleID 141
@@ -853,7 +857,7 @@
 
 //Swap: Allows unit to swap positions with an adjacent ally.
 //By StanH
-#define SwapID 138
+#define SwapID 255
 
 //Steal: Unit can steal items.
 //By Tequila
@@ -876,7 +880,11 @@
 
 //Discipline: Weapon experience gains are doubled.
 //Author Unknown (Initial Commit)
-#define DisciplineID 18
+#define DisciplineID 138
+
+//Arms Master: Can S rank muliple weapon types.
+//Author Unknown (Initial Commit)
+#define ArmsMasterID 18
 
 //Vantage: If HP < 50%, strike first when attacked.
 //Author Unknown (Initial Commit)
