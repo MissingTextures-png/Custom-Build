@@ -371,6 +371,7 @@
 #define SD_Moonlight 0xF71
 #define SD_Vengeance 0xF72
 #define SD_Eclipse 0xF73
+#define SD_CamaraderieAlt 0xF74
 #define UM_Swarp  0xF76
 #define UM_SwarpDesc  0xF77
 

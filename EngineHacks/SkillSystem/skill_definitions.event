@@ -825,7 +825,7 @@
 
 //Lunge: Swap places with the opponent after combat. (No effect if Move is --)
 //By Tequila
-#define LungeID 83
+#define LungeID 255
 
 //Mercy: Enemies are left with at least 1 HP.
 //By Tequila
@@ -1029,7 +1029,6 @@
 //Custom Skills
 
 #define StrongLiftID 5
-
 #define CamaraderieAltID 67
 
 //PhantomSentine Skills
@@ -1075,3 +1074,37 @@
 #define UnderdogID 255
 #define WingedRiderID 255
 #define WiseTurtleID 255
+
+#define StalwartID 83
+#define SaunionID 255
+#define RangeAccuracyID 255
+#define RangeAccuracyNegateID 255
+#define HighGroundID 255
+#define WingedShieldID 255
+#define ArmorShieldID 255
+#define HorseShieldID 255
+#define DragonShieldID 255
+#define VeteranID 255
+#define FairFightID 255
+#define CarefulAimID 255
+#define RallyingCryID 255
+#define ChaosStyleID 255
+#define DragonSkinID 255
+#define CircletID 255
+#define QuickRiposteID 255
+#define FailGaleID 255 
+#define WeaponInsightID 255
+#define SolarBraceID 255
+#define LunarBraceID 255
+#define FlankID 255 
+#define DivinelyInspiringID 255
+#define HeavyBladeID 255
+#define DancingBladeID 255
+#define AirRaidAtkID 255
+#define AirRaidSpdID 255
+#define AirRaidDefID 255
+#define AirRaidCriID 255
+#define AirRaidHitID 255
+#define AirRaidAvoID 255
+#define AirRaidResID 255
+#define RecklessFighterID 255

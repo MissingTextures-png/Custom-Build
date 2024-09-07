@@ -978,5 +978,8 @@ ORG SkillIcon(BlessingID)
 ORG SkillIcon(ArmsMasterID)
 #incbin "SkillIcons/Discipline.dmp"
 
+ORG SkillIcon(StalwartID)
+#incbin "SkillIcons/Boon.dmp"
+
 ORG SkillIcons+0x8000
 
