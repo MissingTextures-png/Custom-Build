@@ -61,6 +61,7 @@ Boon:
 #incbin "Boon/Boon.dmp"
 POIN SkillTester
 WORD BoonID
+WORD StalwartID
 
 ALIGN 4
 Discipline:

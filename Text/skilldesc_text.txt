@@ -1482,3 +1482,7 @@ to both sides.[X]
 ## SD_Nonconforming
 Reaver Adept: Invert the effects[N]
 of the weapon triangle.[X]
+
+## SD_CamaraderieAlt
+CamaraderieAlt: Grants +10 hit if[N]
+there are allies within 2 tiles.[X]

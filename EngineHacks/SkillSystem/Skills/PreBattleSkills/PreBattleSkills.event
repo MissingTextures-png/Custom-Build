@@ -448,6 +448,12 @@ Unmask:
 POIN SkillTester
 WORD UnmaskID
 
+ALIGN 4
+Stalwart_Weapon:
+#incbin "Stalwart/Stalwart.dmp"
+POIN SkillTester
+WORD StalwartID
+
 #include "ElementBoost/ElementBoost.event"
 
 #ifdef MODULAR_PRE_BATTLE_SKILLS
