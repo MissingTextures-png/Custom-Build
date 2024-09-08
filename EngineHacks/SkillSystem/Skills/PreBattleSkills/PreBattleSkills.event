@@ -454,6 +454,19 @@ Stalwart_Weapon:
 POIN SkillTester
 WORD StalwartID
 
+ALIGN 4
+Saunion:
+#incbin "Saunion/Saunion.dmp"
+POIN SkillTester
+WORD SaunionID
+
+ALIGN 4
+RangeAccuracy:
+#incbin "RangeAccuracy/RangeAccuracy.dmp"
+POIN SkillTester
+WORD RangeAccuracyID
+WORD RangeAccuracyNegateID
+
 #include "ElementBoost/ElementBoost.event"
 
 #ifdef MODULAR_PRE_BATTLE_SKILLS

@@ -221,7 +221,7 @@
 
 //Keep Up: At start of turn, if unit is within 3 spaces of an ally with Canto or Canto+, unit gains +2 Mov.
 //By Sme
-#define KeepUpID 121
+#define KeepUpID 255
 
 //Indoor March: At start of turn, if unit is on indoor terrain, unit gains +2 Mov.
 //By Sme
@@ -229,7 +229,7 @@
 
 //Nature Rush: At start of turn, if unit is on natural terrain, unit gains +2 Mov.
 //By Sme
-#define NatureRushID 218
+#define NatureRushID 255
 
 
 //Mug-Loading Skills
@@ -300,7 +300,7 @@
 
 //Gridmaster: Movement skills do not end your action.
 //By Sme
-#define GridmasterID 248
+#define GridmasterID 255
 
 
 //Pre-Battle Skills
@@ -917,7 +917,7 @@
 
 //Dragon's Blood: Unit is able to activate Dragon Veins.
 //By Colorz
-#define DragonsBloodID 107
+#define DragonsBloodID 255
 
 //Hero: +30% skill activation rate when HP is below 50%.
 //By Sme
@@ -1076,9 +1076,9 @@
 #define WiseTurtleID 255
 
 #define StalwartID 83
-#define SaunionID 255
-#define RangeAccuracyID 255
-#define RangeAccuracyNegateID 255
+#define SaunionID 121
+#define RangeAccuracyID 0
+#define RangeAccuracyNegateID 248
 #define HighGroundID 255
 #define WingedShieldID 255
 #define ArmorShieldID 255

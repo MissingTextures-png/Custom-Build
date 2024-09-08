@@ -981,5 +981,17 @@ ORG SkillIcon(ArmsMasterID)
 ORG SkillIcon(StalwartID)
 #incbin "SkillIcons/Boon.dmp"
 
+ORG SkillIcon(SaunionID)
+#incbin "SkillIcons/Lancefaire.dmp"
+
+ORG SkillIcon(RangeAccuracyID)
+#incbin "SkillIcons/Bowbreaker.dmp"
+
+ORG SkillIcon(RangeAccuracyNegateID)
+#incbin "SkillIcons/Bowfaire.dmp"
+
+ORG SkillIcon(HighGroundID)
+#incbin "SkillIcons/BowRangeUp.dmp"
+
 ORG SkillIcons+0x8000
 
