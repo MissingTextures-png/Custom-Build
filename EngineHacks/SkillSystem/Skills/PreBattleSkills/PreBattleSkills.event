@@ -467,6 +467,18 @@ POIN SkillTester
 WORD RangeAccuracyID
 WORD RangeAccuracyNegateID
 
+ALIGN 4
+FairFight:
+#incbin "FairFight/FairFight.dmp"
+POIN SkillTester
+WORD FairFightID
+
+ALIGN 4
+CarefulAim:
+#incbin "CarefulAim/CarefulAim.dmp"
+POIN SkillTester
+WORD CarefulAimID
+
 #include "ElementBoost/ElementBoost.event"
 
 #ifdef MODULAR_PRE_BATTLE_SKILLS
