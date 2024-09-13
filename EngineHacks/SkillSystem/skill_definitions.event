@@ -481,8 +481,8 @@
 
 //Quick/Slow Burn: Hit and Avoid bonus increasing or decreasing each turn, maximum +15.
 //Author Unknown (Initial Commit)
-#define QuickBurnID 133
-#define SlowBurnID 134
+#define QuickBurnID 255
+#define SlowBurnID 255
 
 //Short Shield: Gain 6 defense against attacks recieved in melee.
 //By Sme
@@ -952,7 +952,7 @@
 
 //Liquid Ooze: Attackers trying to gain HP from attacking this unit lose it instead.
 //By Leonarth
-#define LiquidOozeID 178
+#define LiquidOozeID 255
 
 //Shadowgift: Allows the user to use Dark Magic. (Uses highest Magic Rank)
 //By Leonarth
@@ -1084,9 +1084,9 @@
 #define ArmorShieldID 255
 #define HorseShieldID 255
 #define DragonShieldID 255
-#define VeteranID 255
-#define FairFightID 255
-#define CarefulAimID 255
+#define VeteranID 178
+#define FairFightID 133
+#define CarefulAimID 134
 #define RallyingCryID 255
 #define ChaosStyleID 255
 #define DragonSkinID 255
