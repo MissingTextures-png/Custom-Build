@@ -1075,15 +1075,21 @@
 #define WingedRiderID 255
 #define WiseTurtleID 255
 
+#define WingedShieldID 255
+#define ArmorShieldID 169
+#define HorseShieldID 208
+#define DragonShieldID 255
+#define SwordShieldID 255
+#define MonsterShieldID 255
+#define Unknown1ShieldID 255
+#define Unknown2ShieldID 255
+
 #define StalwartID 83
 #define SaunionID 121
 #define RangeAccuracyID 0
 #define RangeAccuracyNegateID 248
 #define HighGroundID 255
-#define WingedShieldID 255
-#define ArmorShieldID 255
-#define HorseShieldID 255
-#define DragonShieldID 255
+
 #define VeteranID 178
 #define FairFightID 133
 #define CarefulAimID 134
