@@ -1002,5 +1002,29 @@ ORG SkillIcon(FairFightID)
 ORG SkillIcon(CarefulAimID)
 #incbin "SkillIcons/SureShot.dmp"
 
+ORG SkillIcon(WingedShieldID)
+#incbin "SkillIcons/Acrobat.dmp"
+
+ORG SkillIcon(ArmorShieldID)
+#incbin "SkillIcons/ArmorMarch.dmp"
+
+ORG SkillIcon(HorseShieldID)
+#incbin "SkillIcons/Tantivy.dmp"
+
+ORG SkillIcon(DragonShieldID)
+#incbin "SkillIcons/DragonsBlood.dmp"
+
+ORG SkillIcon(MonsterShieldID)
+#incbin "SkillIcons/Trample.dmp"
+
+ORG SkillIcon(SwordShieldID)
+#incbin "SkillIcons/ArcaneBlade.dmp"
+
+ORG SkillIcon(Unknown1ShieldID)
+#incbin "SkillIcons/OddRhythm.dmp"
+
+ORG SkillIcon(Unknown2ShieldID)
+#incbin "SkillIcons/EvenRhythm.dmp"
+
 ORG SkillIcons+0x8000
 

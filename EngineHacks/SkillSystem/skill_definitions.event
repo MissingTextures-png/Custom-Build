@@ -745,7 +745,7 @@
 
 //Assassinate: When initiating battle at 1 range: +2 Damage, double attacks occur before counter.
 //By Zeta
-#define AssassinateID 249
+#define AssassinateID 255
 
 
 //Stat Modifier Skills
@@ -995,7 +995,7 @@
 //Display-Only Skills
 
 #define CunningID 59
-#define NiceThighsID 210
+#define NiceThighsID 255
 #define PersonalityID 255
 
 
@@ -1055,14 +1055,14 @@
 
 #define BushidoID 124
 #define CompetitiveID 125
-#define EvenhandedID 246
+#define EvenhandedID 255
 #define FierceCounterID 109
 #define HuntersBoonID 144
-#define OddShapedID 247
-#define PhilandererID 250
-#define PrideID 251
-#define ProdigyID 252
-#define RivalryID 253
+#define OddShapedID 255
+#define PhilandererID 255
+#define PrideID 255
+#define ProdigyID 255
+#define RivalryID 255
 #define UnmaskID 255
 
 #define BibliophileID 255
@@ -1075,19 +1075,19 @@
 #define WingedRiderID 255
 #define WiseTurtleID 255
 
-#define WingedShieldID 255
-#define ArmorShieldID 169
-#define HorseShieldID 208
-#define DragonShieldID 255
-#define SwordShieldID 255
-#define MonsterShieldID 255
-#define Unknown1ShieldID 255
-#define Unknown2ShieldID 255
+#define WingedShieldID 246
+#define ArmorShieldID 247
+#define HorseShieldID 248
+#define DragonShieldID 249
+#define SwordShieldID 250
+#define MonsterShieldID 251
+#define Unknown1ShieldID 252
+#define Unknown2ShieldID 253
 
 #define StalwartID 83
 #define SaunionID 121
 #define RangeAccuracyID 0
-#define RangeAccuracyNegateID 248
+#define RangeAccuracyNegateID 210
 #define HighGroundID 255
 
 #define VeteranID 178
