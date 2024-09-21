@@ -479,6 +479,12 @@ CarefulAim:
 POIN SkillTester
 WORD CarefulAimID
 
+ALIGN 4
+ChaosStyle:
+#incbin "ChaosStyle/ChaosStyle.dmp"
+POIN SkillTester
+WORD ChaosStyleID
+
 #include "ElementBoost/ElementBoost.event"
 
 #ifdef MODULAR_PRE_BATTLE_SKILLS
