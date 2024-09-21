@@ -389,8 +389,8 @@
 
 //Even/Odd Rhythm: +10 Hit and Avoid on even or odd numbered turns.
 //Author Unknown (Initial Commit)
-#define OddRhythmID 131
-#define EvenRhythmID 132
+#define OddRhythmID 255
+#define EvenRhythmID 255
 
 //Faire Skills: +4 damage when equipping a weapon of the specified type.
 //Author Unknown (Initial Commit)
@@ -1093,8 +1093,8 @@
 #define VeteranID 178
 #define FairFightID 133
 #define CarefulAimID 134
-#define RallyingCryID 255
-#define ChaosStyleID 255
+#define RallyingCryID 131
+#define ChaosStyleID 132
 #define DragonSkinID 255
 #define CircletID 255
 #define QuickRiposteID 255
