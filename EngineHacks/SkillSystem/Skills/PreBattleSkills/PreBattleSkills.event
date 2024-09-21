@@ -485,6 +485,13 @@ ChaosStyle:
 POIN SkillTester
 WORD ChaosStyleID
 
+ALIGN 4
+DragonSkin:
+#incbin "DragonSkin/DragonSkin.dmp"
+POIN SkillTester
+WORD DragonSkinID
+
+
 #include "ElementBoost/ElementBoost.event"
 
 #ifdef MODULAR_PRE_BATTLE_SKILLS
