@@ -32,7 +32,13 @@ mov r2, #0x42
 tst r1, r2
 bne MagicalAttacker
 
+@Check that the defender has a weapon
 mov r0, r5
+mov r1, #0x50
+ldrb r1, [r0, r1]
+cmp r1, #0xff
+beq End 	@Defender has no weapon equipped - go to End
+
 mov r1, #0x4c    @Move to the defender's weapon ability
 ldr r1, [r0,r1]
 mov r2, #0x42
@@ -42,6 +48,13 @@ bne Effect @Magic bit set -> go to effect
 b End	@Neither magical -> end
 
 MagicalAttacker:
+@Check that the defender has a weapon
+mov r0, r5
+mov r1, #0x50
+ldrb r1, [r0, r1]
+cmp r1, #0xff
+beq End 	@Defender has no weapon equipped - go to End
+
 mov r0,r5
 mov r1, #0x4c    @Move to the defender's weapon ability
 ldr r1, [r0,r1]
