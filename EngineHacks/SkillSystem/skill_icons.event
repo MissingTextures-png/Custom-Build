@@ -1032,5 +1032,11 @@ ORG SkillIcon(RallyingCryID)
 ORG SkillIcon(ChaosStyleID)
 #incbin "SkillIcons/Pursuit.dmp"
 
+ORG SkillIcon(DragonSkinID)
+#incbin "SkillIcons/SlayerNew.dmp"
+
+ORG SkillIcon(CircletID)
+#incbin "SkillIcons/Miracle.dmp"
+
 ORG SkillIcons+0x8000
 

@@ -221,6 +221,12 @@ Stalwart_Skill:
 POIN SkillTester
 WORD StalwartID
 
+ALIGN 4
+Circlet_Miracle:
+#incbin "Circlet_Miracle/Circlet_Miracle.dmp"
+POIN SkillTester
+WORD CircletID
+
 #include "CombatArts/CombatArtProcSkills.event"
 
 ALIGN 4

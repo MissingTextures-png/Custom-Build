@@ -449,7 +449,7 @@
 
 //Lucky Seven: +20 Hit and Avoid until the 7th turn.
 //Author Unknown (Initial Commit)
-#define LuckySevenID 130
+#define LuckySevenID 255
 
 //Mage Slayer: Gain +2 damage and +10% crit when facing magical enemies.
 //By Datagne
@@ -1041,7 +1041,7 @@
 #define VolantID 24
 
 #define AirSuperiorityID 25
-#define GambleFE14ID 50
+#define GambleFE14ID 255
 #define GuardID 10
 #define HeartseekerID 80
 
@@ -1095,8 +1095,8 @@
 #define CarefulAimID 134
 #define RallyingCryID 131
 #define ChaosStyleID 132
-#define DragonSkinID 255
-#define CircletID 255
+#define DragonSkinID 130
+#define CircletID 50
 #define QuickRiposteID 255
 #define FailGaleID 255 
 #define WeaponInsightID 255

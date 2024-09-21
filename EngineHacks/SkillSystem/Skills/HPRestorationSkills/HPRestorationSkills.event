@@ -13,6 +13,8 @@
 
 #include "Renewal/Renewal.lyn.event"
 
+#include "Circlet_Renewal/Circlet_Renewal.lyn.event"
+
 
 ALIGN 4
 AmaterasuIDLink:
@@ -29,3 +31,5 @@ ReliefIDLink:
 BYTE ReliefID
 RenewalIDLink:
 BYTE RenewalID
+Circlet_IDLink:
+BYTE CircletID

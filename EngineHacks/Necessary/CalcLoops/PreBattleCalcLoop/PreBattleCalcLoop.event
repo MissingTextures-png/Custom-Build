@@ -55,6 +55,8 @@ POIN QuickRiposte
 //tower shield plus needs to go after every other skill that may affect defender's attack
 POIN TowerShieldPlus
 
+POIN DragonSkin
+
 POIN Stalwart_Weapon
 // Because of how killing machine works, critical check should always be done last
 POIN CriticalCheck
