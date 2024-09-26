@@ -227,6 +227,12 @@ Circlet_Miracle:
 POIN SkillTester
 WORD CircletID
 
+Proc_SolarBrace:
+#incbin "SolarBrace/proc_solarbrace.dmp"
+POIN SkillTester
+WORD SolarBraceID
+WORD LiquidOozeID
+
 #include "CombatArts/CombatArtProcSkills.event"
 
 ALIGN 4

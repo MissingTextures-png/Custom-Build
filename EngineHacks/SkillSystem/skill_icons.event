@@ -1038,5 +1038,17 @@ ORG SkillIcon(DragonSkinID)
 ORG SkillIcon(CircletID)
 #incbin "SkillIcons/Miracle.dmp"
 
+ORG SkillIcon(FailGaleID)
+#incbin "SkillIcons/Galeforce.dmp"
+
+ORG SkillIcon(WeaponInsightID)
+#incbin "SkillIcons/SalvageBlow.dmp"
+
+ORG SkillIcon(LunarBraceID)
+#incbin "SkillIcons/Luna.dmp"
+
+ORG SkillIcon(SolarBraceID)
+#incbin "SkillIcons/Sol.dmp"
+
 ORG SkillIcons+0x8000
 
