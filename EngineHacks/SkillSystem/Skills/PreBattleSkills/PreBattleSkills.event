@@ -491,6 +491,18 @@ DragonSkin:
 POIN SkillTester
 WORD DragonSkinID
 
+ALIGN 4
+WeaponInsight:
+#incbin "WeaponInsight/WeaponInsight.dmp"
+POIN SkillTester
+WORD WeaponInsightID
+
+ALIGN 4
+LunarBraceSkill:
+#incbin "LunarBraceSkill/LunarBraceSkill.dmp"
+POIN SkillTester
+WORD LunarBraceID
+
 
 #include "ElementBoost/ElementBoost.event"
 

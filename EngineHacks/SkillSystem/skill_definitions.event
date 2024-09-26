@@ -147,7 +147,7 @@
 
 //Skybreaker: Deal effective damage to flying units.
 //By Sme
-#define SkybreakerID 146
+#define SkybreakerID 255
 
 //Resourceful: Double effectiveness multiplier.
 //By Sme
@@ -203,7 +203,7 @@
 
 //Imbue: Recover HP equal to Magic at the start of each turn.
 //By Sme
-#define ImbueID 145
+#define ImbueID 146
 
 //Movement Skills
 
@@ -248,7 +248,7 @@
 
 //Breath of Life: After attacking,allies in 2 tiles heal of 20% max HP.
 //By circleseverywhere
-#define BreathOfLifeID 139
+#define BreathOfLifeID 255
 
 //Canto: Can move again after certain actions.
 //By Tequila
@@ -849,11 +849,11 @@
 
 //Pivot: Allows unit to move to the opposite side of an adjacent ally.
 //By StanH
-#define PivotID 136 //DONE by StanH
+#define PivotID 255 //DONE by StanH
 
 //Reposition: Allows unit to pull an adjacent ally to its opposite side.
 //By StanH
-#define RepositionID 137
+#define RepositionID 255
 
 //Swap: Allows unit to swap positions with an adjacent ally.
 //By StanH
@@ -1057,7 +1057,7 @@
 #define CompetitiveID 125
 #define EvenhandedID 255
 #define FierceCounterID 109
-#define HuntersBoonID 144
+#define HuntersBoonID 255
 #define OddShapedID 255
 #define PhilandererID 255
 #define PrideID 255
@@ -1097,11 +1097,11 @@
 #define ChaosStyleID 132
 #define DragonSkinID 130
 #define CircletID 50
-#define QuickRiposteID 255
-#define FailGaleID 255 
-#define WeaponInsightID 255
-#define SolarBraceID 255
-#define LunarBraceID 255
+#define QuickRiposteID 136
+#define FailGaleID 137 
+#define WeaponInsightID 139
+#define SolarBraceID 144
+#define LunarBraceID 145
 #define FlankID 255 
 #define DivinelyInspiringID 255
 #define HeavyBladeID 255
