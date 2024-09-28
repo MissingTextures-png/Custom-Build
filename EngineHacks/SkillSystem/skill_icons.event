@@ -1050,5 +1050,11 @@ ORG SkillIcon(LunarBraceID)
 ORG SkillIcon(SolarBraceID)
 #incbin "SkillIcons/Sol.dmp"
 
+ORG SkillIcon(DivinelyInspiringID)
+#incbin "SkillIcons/Charisma.dmp"
+
+ORG SkillIcon(RecklessFighterID)
+#incbin "SkillIcons/Fury.dmp"
+
 ORG SkillIcons+0x8000
 

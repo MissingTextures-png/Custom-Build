@@ -185,6 +185,12 @@ POIN AuraSkillCheck
 WORD RallyingCryID
 
 ALIGN 4
+DivinelyInspiring:
+#incbin "DivinelyInspiring/DivinelyInspiring.dmp"
+POIN AuraSkillCheck
+WORD DivinelyInspiringID
+
+ALIGN 4
 KeepUp:
 #incbin "KeepUp/KeepUp.dmp"
 POIN AuraSkillCheck
