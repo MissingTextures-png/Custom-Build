@@ -203,7 +203,7 @@
 
 //Imbue: Recover HP equal to Magic at the start of each turn.
 //By Sme
-#define ImbueID 146
+#define ImbueID 255
 
 //Movement Skills
 
@@ -323,7 +323,7 @@
 #define CertainBlowID 30
 #define ArmoredBlowID 31
 //By Darrman
-#define HeroesDeathBlowID 149
+#define HeroesDeathBlowID 255
 
 //Breaker Skills:  +50 Hit/Avo when enemy has the specified weapon type equipped.
 //By Rossendale
@@ -547,7 +547,7 @@
 
 // Arcane Blade: When initiating battle at 1 range: Add 3+(Mag/2) to Hit and Crit.
 //By Zeta
-#define ArcaneBladeID 126
+#define ArcaneBladeID 255
 
 //Blue Flame: Attack +2. When adjacent to an ally, Attack +4.
 //By Sme
@@ -555,7 +555,7 @@
 
 //Double Lion: All weapons are treated as brave.
 //By Sme
-#define DoubleLionID 151
+#define DoubleLionID 255
 
 //Thighdeology: If a unit within 3 tiles has Nice Thighs, gain +2 Attack and +20 Hit.
 //By Sme
@@ -774,7 +774,7 @@
 
 //Life and Death: Grants +5 Atk/Mag/Spd, -5 Def/Res.
 //By Leonarth
-#define HeroesLifeAndDeathID 150
+#define HeroesLifeAndDeathID 255
 
 //Push Skills: When HP is full, gain +5 to the given stat.
 //By Sme
@@ -1103,14 +1103,14 @@
 #define SolarBraceID 144
 #define LunarBraceID 145
 #define FlankID 255 
-#define DivinelyInspiringID 255
-#define HeavyBladeID 255
-#define DancingBladeID 255
-#define AirRaidAtkID 255
+#define DivinelyInspiringID 146
+#define HeavyBladeID 149
+#define DancingBladeID 150
+#define AirRaidAtkID 151
 #define AirRaidSpdID 255
 #define AirRaidDefID 255
 #define AirRaidCriID 255
 #define AirRaidHitID 255
 #define AirRaidAvoID 255
 #define AirRaidResID 255
-#define RecklessFighterID 255
+#define RecklessFighterID 126

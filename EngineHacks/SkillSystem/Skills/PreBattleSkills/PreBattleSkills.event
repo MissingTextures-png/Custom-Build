@@ -506,6 +506,8 @@ WORD LunarBraceID
 
 #include "ElementBoost/ElementBoost.event"
 
+#include "AirRaid/AirRaidSkills.event"
+
 #ifdef MODULAR_PRE_BATTLE_SKILLS
 	ALIGN 4
 	#include "ModularPreBattleSkills/ModularPreBattleSkill.event"
