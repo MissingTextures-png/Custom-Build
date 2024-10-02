@@ -60,6 +60,18 @@ ALIGN 4
 MercyEffect:
 #incbin "Mercy/MercyEffect.dmp"
 
+ALIGN 4
+MercySlayerUsability:
+#incbin "Mercy/MercyUsability.dmp"
+POIN SkillTester
+WORD MercySlayerID
+
+ALIGN 4
+MercySlayerEffect:
+#incbin "Mercy/MercyEffect.dmp"
+
+
+#include "SacrificeDrawBack/Installer.event"
 
 #include "CombatArts/CombatArts.event"
 

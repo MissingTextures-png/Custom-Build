@@ -426,3 +426,5 @@
 #define UM_SureShot 0xfB3
 #define UM_SureShotDesc 0xfB4
 #define PrepScreenUseSkillScroll  0xfB5
+#define HealTargetBottomText 0xfB6
+#define DrawBackTargetBottomText 0xfB7
