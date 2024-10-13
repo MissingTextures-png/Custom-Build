@@ -31,6 +31,11 @@ Proc_Adept:
 POIN SkillTester
 WORD AdeptID
 
+Proc_AdeptAlt:
+#incbin "AdeptAlt/proc_adept.dmp"
+POIN SkillTester
+WORD AdeptAltID
+
 Proc_Astra:
 #incbin "Astra/proc_astra.dmp"
 POIN SkillTester
