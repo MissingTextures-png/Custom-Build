@@ -161,19 +161,67 @@ cmp r0, #1
 bne End
 
 @if crit:
-mov r0,r5		@defender
+push {r6}                   @we'll need this as a placeholder for the final damage total
+mov r1, #4
+ldrsh r1, [r7, r1]          @load the attacker's final damage total
+mov r6, r1                  @store it in r6, so we have a baseline to compare to when working out if any of these skills have activated
+
+mov r0,r4                   @attacker
+ldr r1, =FatefulCritIDLink
+ldrb r1, [ r1 ]
+blh SkillTester, r3
+cmp r0, #1
+bne CheckExpertise          @if the attacker doesn't have FatefulCrit, branch to the next skill check
+
+@Otherwise, apply the effect of FatefulCrit
+@First need to check if defender also has expertise
+mov r0,r5            @defender
 ldr r1, =ExpertiseIDLink
 ldrb r1, [ r1 ]
 blh SkillTester, r3
+cmp r0,#1
+bne NoExpertise
 
-mov r1, #4
-ldrsh r1, [r7, r1]
-lsl r2, r1, #1
-cmp r0,#0
-bne StoreDamage
-add r2, r1 @damagex3
+@If true, multiply damage by 2.5
+mov r2, r6
+lsl r6, #1
+lsr r2, #1
+add r6, r2
+mov r2, r6                  @now move the placeholder into r2
+b     StoreDamage           @now branch to StoreDamage
+
+@else, quadruple damage
+NoExpertise:
+lsl r6, #2                  @quadruple the damage by shifting it 2 places to the left
+mov r2, r6                  @now move the placeholder into r2
+b     StoreDamage           @now branch to StoreDamage
+
+CheckExpertise:
+mov r0,r5            @defender
+ldr r1, =ExpertiseIDLink
+ldrb r1, [ r1 ]
+blh SkillTester, r3
+cmp r0,#1            
+bne CheckDamage             @if the defender doesn't have Expertise, check the final damage amount
+
+@otherwise, halve the damage total in r6
+lsl r6, #1             
+mov r2, r6                  @now move the placeholder into r2
+b     StoreDamage           @now branch to StoreDamage
+
+CheckDamage:
+ldrh r1, [r7, #4]           @load a copy of the final damage value in RAM
+cmp  r1, r6                 @compare it to our placeholder
+bne  StoreDamage            @if they're not equal, no futher changes are required as at least one crit damage skill has activated
+
+@otherwise we go with the x3 bonus
+mov r2, r1                  @copy r1, into r2
+lsl r1, #1                  @now halve r1
+add r2, r1                  @now add them together
+
 StoreDamage:
-strh r2, [r7, #4] @final damage
+pop {r6}                    @restore the original value of r6
+strh r2, [r7, #4]           @final damage
 
 @set crit flag
 ldr     r2,[r6]    
@@ -193,6 +241,7 @@ pop {r4-r7}
 pop {r15}
 
 @.equ ExpertiseID, SkillTester+4
+@.equ FatefulCritID, ExpertiseID+4
 @.ltorg
 @SkillTester:
 @
