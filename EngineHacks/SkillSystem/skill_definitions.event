@@ -892,7 +892,7 @@
 
 //Vantage+: User always attacks first, even if attacked. Negates crits.
 //By SD9k
-#define VantagePlusID 152
+#define VantagePlusID 255
 
 //Nihil: Cancels the opponent's skills in combat.
 //Author Unknown (Initial Commit)
@@ -1121,3 +1121,4 @@
 #define ArdentSacrificeID 255
 #define ReciprocalAidID 255
 #define AdeptAltID 91
+#define FatefulCritID 152
