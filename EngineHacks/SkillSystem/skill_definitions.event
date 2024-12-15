@@ -168,7 +168,7 @@
 
 //Blossom: 2x growth rates, but 1/2 exp gain.
 //By Sme
-#define BlossomID 216
+#define BlossomID 255
 
 //Aptitude: +20% to all growth rates.
 //By Sme
@@ -762,7 +762,7 @@
 
 //Resolve: When HP < 50%, gain 1.5x Str, Skl, & Spd.
 //By Sme
-#define ResolveID 219
+#define ResolveID 255
 
 //Fortress Defense: +5 Def, -3 Str/Mag
 //By Leonarth
@@ -1122,3 +1122,5 @@
 #define ReciprocalAidID 255
 #define AdeptAltID 91
 #define FatefulCritID 152
+#define HolyShieldID 216
+#define LackOfInsightID 219

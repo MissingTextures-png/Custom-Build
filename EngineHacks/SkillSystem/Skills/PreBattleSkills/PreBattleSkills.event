@@ -120,6 +120,12 @@ POIN SkillTester
 WORD InsightID
 
 ALIGN 4
+LackOfInsight:
+#incbin "LackOfInsight/lackofinsight.dmp"
+POIN SkillTester
+WORD LackOfInsightID
+
+ALIGN 4
 KnightAspirant:
 #incbin "KnightAspirant/KnightAspirant.dmp"
 POIN SkillTester
