@@ -51,12 +51,12 @@ bool IsItemOffenseEquipmentMokhaRework(int item)
 {
 	if (GetItemAttributes(item) & IA_STAFF)
 		return IsItemOffenseEquipmentStaff(item);
-
+	
 	return IsItemOffenseEquipmentOld(item);
 }
 
 void ActionStaffMokhaRework(ProcPtr proc)
 {
 	ActionStaffDoorChestUseItem(proc);
-	AddAttacksMade(&gBattleActor);
+	GetAttacksMade(&gBattleActor);
 }

@@ -17,7 +17,7 @@ PUSH
 	LynJump(IsItemOffenseEquipmentMokhaRework)
 POP
 
-// #include "Source/ShieldFix.lyn.event"
+#include "Source/ShieldFix.lyn.event"
 ALIGN 4
 PUSH
 ORG CURRENTOFFSET+$65;IsItemOffenseEquipmentMokhaRework:
