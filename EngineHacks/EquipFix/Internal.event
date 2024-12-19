@@ -13,7 +13,7 @@ ALIGN 4
 */
 
 PUSH
-	ORG IsItemOffenseEquipment
+	ORG (IsItemOffenseEquipment - 1)
 	LynJump(IsItemOffenseEquipmentMokhaRework)
 POP
 
