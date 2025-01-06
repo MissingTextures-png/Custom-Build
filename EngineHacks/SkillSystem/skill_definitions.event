@@ -1124,3 +1124,4 @@
 #define FatefulCritID 152
 #define HolyShieldID 216
 #define LackOfInsightID 219
+#define TomeASCalcID 0

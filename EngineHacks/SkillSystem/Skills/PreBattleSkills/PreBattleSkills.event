@@ -509,6 +509,13 @@ LunarBraceSkill:
 POIN SkillTester
 WORD LunarBraceID
 
+ALIGN 4
+TomeASCalc:
+#incbin "TomeASCalc/TomeASCalc.dmp"
+POIN SkillTester
+POIN ItemTable
+WORD TomeASCalcID
+
 
 #include "ElementBoost/ElementBoost.event"
 
