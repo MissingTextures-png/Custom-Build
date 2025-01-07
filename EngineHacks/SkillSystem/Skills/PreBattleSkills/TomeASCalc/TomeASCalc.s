@@ -51,6 +51,43 @@ beq		IsTome
 b		End
 
 IsTome:
+@First subtract weapon's weight from unit's AS
+@Get unit's equipped weapon weight
+mov r1,#0x4a
+ldrb r0,[r4,r1]
+mov r1,#36
+mul r0,r1
+ldr r1,ItemTable
+add r0,r1
+mov r1,#23
+ldrb r3,[r0,r1]
+@and subtract it from unit's AS
+mov r1, #0x5E
+ldrh r0, [r4, r1] @AS
+sub r0, r3
+strh r0, [r4,r1]
+
+@Next check if unit is weighed down by equipped weapon
+@Get unit's con
+ldr r0, [r4, #0x0] 
+ldrb r0, [r0, #0x13] @unit Con
+ldr r1, [r4, #0x04]
+ldrb r1, [r1, #0x11] @class Con
+add r0, r1
+ldrb r1, [r4, #0x1A] @Con bonus
+add r0, r1
+
+@Subtract unit's con from weapon weight - if unit is weighed down, add to unit's as to negate the penalty
+sub r3, r0
+cmp r3, #0
+ble SkillASBonus
+mov r1, #0x5E
+ldrh r0, [r4, r1] @AS
+add r0, r3
+strh r0, [r4,r1]
+
+@Next, add 1/4 of unit's skill to AS
+SkillASBonus:
 mov r1, #0x15		@Get Attacker's skill
 ldrh r0, [r4, r1]
 lsr r0, #2		@Divide by 4
