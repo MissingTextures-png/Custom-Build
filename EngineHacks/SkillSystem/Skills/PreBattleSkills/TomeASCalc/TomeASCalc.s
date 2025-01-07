@@ -80,22 +80,11 @@ add r0, r1
 @Subtract unit's con from weapon weight - if unit is weighed down, add to unit's as to negate the penalty
 sub r3, r0
 cmp r3, #0
-ble SkillASBonus
+ble End
 mov r1, #0x5E
 ldrh r0, [r4, r1] @AS
 add r0, r3
 strh r0, [r4,r1]
-
-@Next, add 1/4 of unit's skill to AS
-SkillASBonus:
-mov r1, #0x15		@Get Attacker's skill
-ldrh r0, [r4, r1]
-lsr r0, #2		@Divide by 4
-mov r1, #0x5E		@Get Attacker's AS
-ldrh r2, [r4, r1]
-add r2, r0		@Add 1/4 of unit's skill to AS
-strh r2, [r4, r1]
-b		End
 
 End:
 pop {r4-r7, r15}
