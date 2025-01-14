@@ -511,6 +511,7 @@ WORD LunarBraceID
 
 ALIGN 4
 Deity:
+MESSAGE Deity skill at CurrentOffset
 #incbin "Deity/Deity.dmp"
 POIN SkillTester
 WORD DeityID
