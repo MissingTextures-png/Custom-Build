@@ -2,18 +2,6 @@
 .align 4
 
 .equ BoonID,SkillTester+4
-.equ StalwartID, BoonID+4
-
-
-@check if you have stalwart
-push {r1-r3} @don't crucify me this is the easiest way to do this since every single register is in use here
-mov r0,r4
-ldr	r1,StalwartID
-ldr	r2,SkillTester
-mov	r14,r2
-.short	0xF800
-cmp	r0,#1
-beq BoonEffect @if you have Stalwart, go straight to the effect, else check for Boon
 
 @check if you have boon
 push {r1-r3} @don't crucify me this is the easiest way to do this since every single register is in use here
@@ -94,4 +82,3 @@ ReturnPoint:
 SkillTester:
 @POIN SkillTester
 @WORD BoonID
-@WORD StalwartID

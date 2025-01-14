@@ -31,11 +31,6 @@ Proc_Adept:
 POIN SkillTester
 WORD AdeptID
 
-Proc_AdeptAlt:
-#incbin "AdeptAlt/proc_adept.dmp"
-POIN SkillTester
-WORD AdeptAltID
-
 Proc_Astra:
 #incbin "Astra/proc_astra.dmp"
 POIN SkillTester
@@ -91,9 +86,6 @@ POIN SkillTester
 WORD MiracleID
 
 Proc_Mercy:
-#incbin "Mercy/proc_mercy.dmp"
-
-Proc_MercySlayer:
 #incbin "Mercy/proc_mercy.dmp"
 
 Proc_Impale:
@@ -218,34 +210,10 @@ POIN SkillTester
 WORD GreatShieldID
 
 ALIGN 4
-Proc_HolyShield:
-#incbin "HolyShield/proc_holyshield.dmp"
-POIN SkillTester
-WORD HolyShieldID
-
-ALIGN 4
 Proc_Vengeance:
 #incbin "Vengeance/proc_vengeance.dmp"
 POIN SkillTester
 WORD VengeanceID
-
-ALIGN 4
-Stalwart_Skill:
-#incbin "Stalwart/Stalwart.dmp"
-POIN SkillTester
-WORD StalwartID
-
-ALIGN 4
-Circlet_Miracle:
-#incbin "Circlet_Miracle/Circlet_Miracle.dmp"
-POIN SkillTester
-WORD CircletID
-
-Proc_SolarBrace:
-#incbin "SolarBrace/proc_solarbrace.dmp"
-POIN SkillTester
-WORD SolarBraceID
-WORD LiquidOozeID
 
 #include "CombatArts/CombatArtProcSkills.event"
 

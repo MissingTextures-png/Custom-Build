@@ -15,9 +15,3 @@ VoidCurse:
 #incbin "VoidCurse/VoidCurse.dmp"
 POIN SkillTester
 WORD VoidCurseID
-
-ALIGN 4
-Veteran:
-#incbin "Veteran/Veteran.dmp"
-POIN SkillTester
-WORD VeteranID

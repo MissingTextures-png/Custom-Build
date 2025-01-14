@@ -3,7 +3,6 @@
 @NOTE does not check terrain! 
 
 .equ MercyID, SkillTester+4
-.equ MercySlayerID, MercyID+4
 .thumb
 .org 0
 push {r4-r7,lr}
@@ -14,15 +13,6 @@ mov r0, #0x40 @has not moved...
 and r0,r1
 cmp r0,#0
 bne False
-
-@check if active unit has MercySlayer
-mov r0, r4 @test
-ldr r1, MercySlayerID
-ldr r2, SkillTester
-mov lr, r2
-.short 0xf800 @test if unit has the skill
-cmp r0, #0
-bne HasMercy
 
 @check if active unit has Mercy
 mov r0, r4 @test

@@ -7,8 +7,7 @@
 @Slayer table outline: BYTE class_ID multiplier is_there_another_entry 0; SHORT class_types 0
 
 .equ SlayerID, SkillTester+4
-.equ MercySlayerID, SkillTester+4
-.equ NullifyID, MercySlayerID+4
+.equ NullifyID, SlayerID+4
 .equ SlayerTable, NullifyID+4
 
 push	{r4-r6,r14}
@@ -23,22 +22,7 @@ ldr		r3,SkillTester
 mov		r14,r3
 .short	0xF800
 cmp		r0,#0
-bne		Slayer
-
-mov		r4,r0
-mov		r5,r1
-ldr		r0,[r5,#0x4]
-cmp		r0,#0
 beq		RetFalse
-mov		r0,r4
-ldr		r1,MercySlayerID
-ldr		r3,SkillTester
-mov		r14,r3
-.short	0xF800
-cmp		r0,#0
-beq		RetFalse
-
-Slayer:
 ldr		r6,SlayerTable
 ldr		r3,[r4,#4]
 ldrb	r3,[r3,#4]			@class id

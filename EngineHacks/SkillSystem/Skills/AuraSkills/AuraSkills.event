@@ -173,24 +173,6 @@ POIN AuraSkillCheck
 WORD CamaraderieAltID
 
 ALIGN 4
-RallyingCryBuff:
-#incbin "RallyingCry/RallyingCryBuff.dmp"
-POIN AuraSkillCheck
-WORD RallyingCryID
-
-ALIGN 4
-RallyingCryDebuff:
-#incbin "RallyingCry/RallyingCryDebuff.dmp"
-POIN AuraSkillCheck
-WORD RallyingCryID
-
-ALIGN 4
-DivinelyInspiring:
-#incbin "DivinelyInspiring/DivinelyInspiring.dmp"
-POIN AuraSkillCheck
-WORD DivinelyInspiringID
-
-ALIGN 4
 KeepUp:
 #incbin "KeepUp/KeepUp.dmp"
 POIN AuraSkillCheck

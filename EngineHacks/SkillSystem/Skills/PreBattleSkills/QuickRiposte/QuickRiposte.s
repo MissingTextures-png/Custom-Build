@@ -21,10 +21,11 @@ mov r14,r2
 cmp r0,#0
 beq GoBack
 
-@is the defender at full hp?
+@is the defender at 50% hp or greater?
 ldr r3,=#0x203A56C
 ldrb r0,[r3,#0x12] 	@max HP
 ldrb r1,[r3,#0x13] 	@cur HP
+lsr r0,r0,#1 		@halved
 cmp r1,r0			@checking if r1 >= r0
 blt GoBack			@if not, go back
 
