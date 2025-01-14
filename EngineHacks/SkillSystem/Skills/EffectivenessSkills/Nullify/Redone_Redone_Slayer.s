@@ -10,7 +10,8 @@
 @this version just checks a given class type EA literal
 
 .equ SlayerID, SkillTester+4
-.equ NullifyID, SlayerID+4
+.equ MercySlayerID, SlayerID+4
+.equ NullifyID, MercySlayerID+4
 .equ SlayerClassType, NullifyID+4
 .equ SkybreakerID, SlayerClassType+4
 .equ SkybreakerClassType,SkybreakerID+4
@@ -26,6 +27,23 @@ beq		RetFalse
 Slayer:
 mov		r0,r4
 ldr		r1,SlayerID
+ldr		r3,SkillTester
+mov		r14,r3
+.short	0xF800
+cmp		r0,#0
+beq		MercySlayer
+
+ldr		r2,[r5,#4]
+mov		r1,#0x50
+ldrh	r2,[r2,r1]			@weaknesses defender unit has
+ldrh 	r0,SlayerClassType
+and		r0,r2
+cmp		r0,#0
+bne		NullifyCheck
+
+MercySlayer:
+mov		r0,r4
+ldr		r1,MercySlayerID
 ldr		r3,SkillTester
 mov		r14,r3
 .short	0xF800

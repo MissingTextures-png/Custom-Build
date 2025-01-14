@@ -120,6 +120,12 @@ POIN SkillTester
 WORD InsightID
 
 ALIGN 4
+LackOfInsight:
+#incbin "LackOfInsight/lackofinsight.dmp"
+POIN SkillTester
+WORD LackOfInsightID
+
+ALIGN 4
 KnightAspirant:
 #incbin "KnightAspirant/KnightAspirant.dmp"
 POIN SkillTester
@@ -448,7 +454,70 @@ Unmask:
 POIN SkillTester
 WORD UnmaskID
 
+ALIGN 4
+Stalwart_Weapon:
+#incbin "Stalwart/Stalwart.dmp"
+POIN SkillTester
+WORD StalwartID
+
+ALIGN 4
+Saunion:
+#incbin "Saunion/Saunion.dmp"
+POIN SkillTester
+WORD SaunionID
+
+ALIGN 4
+RangeAccuracy:
+#incbin "RangeAccuracy/RangeAccuracy.dmp"
+POIN SkillTester
+WORD RangeAccuracyID
+WORD RangeAccuracyNegateID
+
+ALIGN 4
+FairFight:
+#incbin "FairFight/FairFight.dmp"
+POIN SkillTester
+WORD FairFightID
+
+ALIGN 4
+CarefulAim:
+#incbin "CarefulAim/CarefulAim.dmp"
+POIN SkillTester
+WORD CarefulAimID
+
+ALIGN 4
+ChaosStyle:
+#incbin "ChaosStyle/ChaosStyle.dmp"
+POIN SkillTester
+WORD ChaosStyleID
+
+ALIGN 4
+DragonSkin:
+#incbin "DragonSkin/DragonSkin.dmp"
+POIN SkillTester
+WORD DragonSkinID
+
+ALIGN 4
+WeaponInsight:
+#incbin "WeaponInsight/WeaponInsight.dmp"
+POIN SkillTester
+WORD WeaponInsightID
+
+ALIGN 4
+LunarBraceSkill:
+#incbin "LunarBraceSkill/LunarBraceSkill.dmp"
+POIN SkillTester
+WORD LunarBraceID
+
+ALIGN 4
+Deity:
+#incbin "Deity/Deity.dmp"
+POIN SkillTester
+WORD DeityID
+
 #include "ElementBoost/ElementBoost.event"
+
+#include "AirRaid/AirRaidSkills.event"
 
 #ifdef MODULAR_PRE_BATTLE_SKILLS
 	ALIGN 4
