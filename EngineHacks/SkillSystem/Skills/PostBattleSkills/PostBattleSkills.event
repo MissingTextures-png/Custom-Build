@@ -88,6 +88,13 @@ POIN SkillTester
 WORD CantoPlusID
 
 ALIGN 4
+CantoAlt:
+#incbin "CantoAlt/cantoalt.dmp"
+POIN SkillTester
+WORD CantoAltID
+WORD ENABLE_LEGACY_CANTO
+
+ALIGN 4
 ReMove:
 #incbin "ReMove/remove.dmp"
 POIN SkillTester
@@ -104,6 +111,8 @@ POIN PowerstaffEvent
 #include "Powerstaff/PowerstaffEvent.event"
 
 #include "Cultured/Cultured.event"
+
+#include "FailGale/Installer.event"
 
 ALIGN 4
 Gridmaster:
