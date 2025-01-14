@@ -510,14 +510,8 @@ POIN SkillTester
 WORD LunarBraceID
 
 ALIGN 4
-DeityDamageReduction:
-#incbin "Deity/DeityDamageReduction.dmp"
-POIN SkillTester
-WORD DeityID
-
-ALIGN 4
-DeityDamageVulnerability:
-#incbin "Deity/DeityDamageVulnerability.dmp"
+Deity:
+#incbin "Deity/Deity.dmp"
 POIN SkillTester
 WORD DeityID
 
